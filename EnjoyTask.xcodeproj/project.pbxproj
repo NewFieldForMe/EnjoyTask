@@ -25,6 +25,10 @@
 		92EDE1F8232F67EA00B3D94E /* RegsiterPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE1F7232F67EA00B3D94E /* RegsiterPresenterTests.swift */; };
 		92EDE1FB232F701400B3D94E /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE1FA232F701400B3D94E /* GeneratedMocks.swift */; };
 		92EDE207232F919700B3D94E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92EDE206232F919600B3D94E /* GoogleService-Info.plist */; };
+		92EDE209232FBEF700B3D94E /* LoginInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE208232FBEF700B3D94E /* LoginInterfaces.swift */; };
+		92EDE20B232FBF0300B3D94E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE20A232FBF0300B3D94E /* LoginViewController.swift */; };
+		92EDE20D232FBF1100B3D94E /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE20C232FBF1100B3D94E /* LoginPresenter.swift */; };
+		92EDE20F232FBF1C00B3D94E /* LoginWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE20E232FBF1C00B3D94E /* LoginWireframe.swift */; };
 		D074AEB8FEF668DB152CDE01 /* Pods_EnjoyTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3258AA3A0CB58F5F7387AECF /* Pods_EnjoyTaskTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +80,10 @@
 		92EDE1F7232F67EA00B3D94E /* RegsiterPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegsiterPresenterTests.swift; sourceTree = "<group>"; };
 		92EDE1FA232F701400B3D94E /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		92EDE206232F919600B3D94E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		92EDE208232FBEF700B3D94E /* LoginInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInterfaces.swift; sourceTree = "<group>"; };
+		92EDE20A232FBF0300B3D94E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		92EDE20C232FBF1100B3D94E /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		92EDE20E232FBF1C00B3D94E /* LoginWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWireframe.swift; sourceTree = "<group>"; };
 		94679F97D390863DB08381D4 /* Pods-EnjoyTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTaskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnjoyTaskTests/Pods-EnjoyTaskTests.release.xcconfig"; sourceTree = "<group>"; };
 		A0920E5196DDBF7371722DC4 /* Pods-EnjoyTask.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTask.staging.xcconfig"; path = "Pods/Target Support Files/Pods-EnjoyTask/Pods-EnjoyTask.staging.xcconfig"; sourceTree = "<group>"; };
 		A78C30A5CB7389CF8520F13B /* Pods-EnjoyTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTaskUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnjoyTaskUITests/Pods-EnjoyTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -197,6 +205,10 @@
 		92EDE1E5232EA23A00B3D94E /* login-module */ = {
 			isa = PBXGroup;
 			children = (
+				92EDE208232FBEF700B3D94E /* LoginInterfaces.swift */,
+				92EDE20A232FBF0300B3D94E /* LoginViewController.swift */,
+				92EDE20C232FBF1100B3D94E /* LoginPresenter.swift */,
+				92EDE20E232FBF1C00B3D94E /* LoginWireframe.swift */,
 			);
 			path = "login-module";
 			sourceTree = "<group>";
@@ -547,11 +559,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92EDE20F232FBF1C00B3D94E /* LoginWireframe.swift in Sources */,
+				92EDE20B232FBF0300B3D94E /* LoginViewController.swift in Sources */,
 				92EDE1B3232E80A400B3D94E /* ViewController.swift in Sources */,
 				92EDE1F2232F60BA00B3D94E /* RegisterPresenter.swift in Sources */,
 				92EDE1AF232E80A400B3D94E /* AppDelegate.swift in Sources */,
+				92EDE20D232FBF1100B3D94E /* LoginPresenter.swift in Sources */,
 				92EDE1B1232E80A400B3D94E /* SceneDelegate.swift in Sources */,
 				92EDE1F0232F609900B3D94E /* RegisterInterfaces.swift in Sources */,
+				92EDE209232FBEF700B3D94E /* LoginInterfaces.swift in Sources */,
 				92EDE1F4232F60C900B3D94E /* RegisterWireframe.swift in Sources */,
 				92EDE1EE232F607100B3D94E /* RegisterViewController.swift in Sources */,
 			);
