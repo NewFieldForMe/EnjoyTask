@@ -24,6 +24,7 @@
 		92EDE1F4232F60C900B3D94E /* RegisterWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE1F3232F60C900B3D94E /* RegisterWireframe.swift */; };
 		92EDE1F8232F67EA00B3D94E /* RegsiterPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE1F7232F67EA00B3D94E /* RegsiterPresenterTests.swift */; };
 		92EDE1FB232F701400B3D94E /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE1FA232F701400B3D94E /* GeneratedMocks.swift */; };
+		92EDE207232F919700B3D94E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92EDE206232F919600B3D94E /* GoogleService-Info.plist */; };
 		D074AEB8FEF668DB152CDE01 /* Pods_EnjoyTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3258AA3A0CB58F5F7387AECF /* Pods_EnjoyTaskTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,8 +48,10 @@
 /* Begin PBXFileReference section */
 		08ED0FB6B057FCE3A225A8FF /* Pods-EnjoyTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTaskUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EnjoyTaskUITests/Pods-EnjoyTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		0B068ABC6D357092DA7A0339 /* Pods_EnjoyTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnjoyTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22E04939F9A3C2DDABFA06A1 /* Pods-EnjoyTaskTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTaskTests.staging.xcconfig"; path = "Pods/Target Support Files/Pods-EnjoyTaskTests/Pods-EnjoyTaskTests.staging.xcconfig"; sourceTree = "<group>"; };
 		2D8BFC8050B8A64047884E8A /* Pods_EnjoyTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnjoyTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3258AA3A0CB58F5F7387AECF /* Pods_EnjoyTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnjoyTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6700367A0DF5E7F1960F2BBC /* Pods-EnjoyTaskUITests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTaskUITests.staging.xcconfig"; path = "Pods/Target Support Files/Pods-EnjoyTaskUITests/Pods-EnjoyTaskUITests.staging.xcconfig"; sourceTree = "<group>"; };
 		6B2E4D5A7FFC33B9F049DB94 /* Pods-EnjoyTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EnjoyTask/Pods-EnjoyTask.debug.xcconfig"; sourceTree = "<group>"; };
 		71A60CC96F4D6DECFC9CC401 /* Pods-EnjoyTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnjoyTask/Pods-EnjoyTask.release.xcconfig"; sourceTree = "<group>"; };
 		92EDE1AB232E80A400B3D94E /* EnjoyTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnjoyTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,7 +75,9 @@
 		92EDE1F3232F60C900B3D94E /* RegisterWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterWireframe.swift; sourceTree = "<group>"; };
 		92EDE1F7232F67EA00B3D94E /* RegsiterPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegsiterPresenterTests.swift; sourceTree = "<group>"; };
 		92EDE1FA232F701400B3D94E /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
+		92EDE206232F919600B3D94E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		94679F97D390863DB08381D4 /* Pods-EnjoyTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTaskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnjoyTaskTests/Pods-EnjoyTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		A0920E5196DDBF7371722DC4 /* Pods-EnjoyTask.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTask.staging.xcconfig"; path = "Pods/Target Support Files/Pods-EnjoyTask/Pods-EnjoyTask.staging.xcconfig"; sourceTree = "<group>"; };
 		A78C30A5CB7389CF8520F13B /* Pods-EnjoyTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTaskUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnjoyTaskUITests/Pods-EnjoyTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AF99FF88AF182C80D7DD7883 /* Pods-EnjoyTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTaskTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EnjoyTaskTests/Pods-EnjoyTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +119,9 @@
 				94679F97D390863DB08381D4 /* Pods-EnjoyTaskTests.release.xcconfig */,
 				08ED0FB6B057FCE3A225A8FF /* Pods-EnjoyTaskUITests.debug.xcconfig */,
 				A78C30A5CB7389CF8520F13B /* Pods-EnjoyTaskUITests.release.xcconfig */,
+				A0920E5196DDBF7371722DC4 /* Pods-EnjoyTask.staging.xcconfig */,
+				22E04939F9A3C2DDABFA06A1 /* Pods-EnjoyTaskTests.staging.xcconfig */,
+				6700367A0DF5E7F1960F2BBC /* Pods-EnjoyTaskUITests.staging.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -152,6 +160,7 @@
 				92EDE1B2232E80A400B3D94E /* ViewController.swift */,
 				92EDE1B7232E80A500B3D94E /* Assets.xcassets */,
 				92EDE1BC232E80A500B3D94E /* Info.plist */,
+				92EDE206232F919600B3D94E /* GoogleService-Info.plist */,
 			);
 			path = EnjoyTask;
 			sourceTree = "<group>";
@@ -289,6 +298,7 @@
 				92EDE1A8232E80A400B3D94E /* Frameworks */,
 				92EDE1A9232E80A400B3D94E /* Resources */,
 				92EDE1E3232E93FD00B3D94E /* ShellScript */,
+				93543F13F31D1D114827AC7E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -389,6 +399,7 @@
 			files = (
 				92EDE1BB232E80A500B3D94E /* LaunchScreen.storyboard in Resources */,
 				92EDE1B8232E80A500B3D94E /* Assets.xcassets in Resources */,
+				92EDE207232F919700B3D94E /* GoogleService-Info.plist in Resources */,
 				92EDE1DF232E839C00B3D94E /* README.md in Resources */,
 				92EDE1B6232E80A400B3D94E /* Main.storyboard in Resources */,
 			);
@@ -483,6 +494,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/modules/register-module/RegisterInterfaces.swift\"\n";
+		};
+		93543F13F31D1D114827AC7E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EnjoyTask/Pods-EnjoyTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EnjoyTask/Pods-EnjoyTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EnjoyTask/Pods-EnjoyTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		9DA8AFB038096CCE1636CAF7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -724,7 +752,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yamadaryo.EnjoyTask;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yamadaryo.EnjoyTask.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -838,6 +866,130 @@
 			};
 			name = Release;
 		};
+		92EDE1FC232F84E700B3D94E /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"STAGING=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Staging;
+		};
+		92EDE1FD232F84E700B3D94E /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0920E5196DDBF7371722DC4 /* Pods-EnjoyTask.staging.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B7ECV6NH3D;
+				INFOPLIST_FILE = EnjoyTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yamadaryo.EnjoyTask.stg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = STAGING;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		92EDE1FE232F84E700B3D94E /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22E04939F9A3C2DDABFA06A1 /* Pods-EnjoyTaskTests.staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B7ECV6NH3D;
+				INFOPLIST_FILE = EnjoyTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yamadaryo.EnjoyTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnjoyTask.app/EnjoyTask";
+			};
+			name = Staging;
+		};
+		92EDE1FF232F84E700B3D94E /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6700367A0DF5E7F1960F2BBC /* Pods-EnjoyTaskUITests.staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B7ECV6NH3D;
+				INFOPLIST_FILE = EnjoyTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yamadaryo.EnjoyTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EnjoyTask;
+			};
+			name = Staging;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -845,6 +997,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				92EDE1D3232E80A600B3D94E /* Debug */,
+				92EDE1FC232F84E700B3D94E /* Staging */,
 				92EDE1D4232E80A600B3D94E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -854,6 +1007,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				92EDE1D6232E80A600B3D94E /* Debug */,
+				92EDE1FD232F84E700B3D94E /* Staging */,
 				92EDE1D7232E80A600B3D94E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -863,6 +1017,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				92EDE1D9232E80A600B3D94E /* Debug */,
+				92EDE1FE232F84E700B3D94E /* Staging */,
 				92EDE1DA232E80A600B3D94E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -872,6 +1027,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				92EDE1DC232E80A600B3D94E /* Debug */,
+				92EDE1FF232F84E700B3D94E /* Staging */,
 				92EDE1DD232E80A600B3D94E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

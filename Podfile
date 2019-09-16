@@ -7,6 +7,8 @@ target 'EnjoyTask' do
 
   # Pods for EnjoyTask
   pod 'SwiftLint'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
 
   target 'EnjoyTaskTests' do
     inherit! :search_paths
