@@ -35,7 +35,6 @@ class RegsiterPresenterTests: XCTestCase {
     ///   - バリデーションエラーになる
     func testDidSelectRegisterAction_withEmptyEmailAddress_And_Password() {
         sut.didSelectRegisterAction(email: nil, password: nil)
-
         verify(mockView, times(1)).showValidationError()
 
         sut.didSelectRegisterAction(email: "email", password: nil)
@@ -49,7 +48,6 @@ class RegsiterPresenterTests: XCTestCase {
     ///   - バリデーションエラーにならない
     func testDidSelectRegisterAction_withNotEmptyEmailAddress_And_Password() {
         sut.didSelectRegisterAction(email: "email", password: "password")
-
         verify(mockView, times(0)).showValidationError()
     }
 

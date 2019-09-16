@@ -11,7 +11,7 @@ import UIKit
 class RootRouter {
     static func rootNavigationController() -> UINavigationController {
         let navigationController = UINavigationController()
-        let loginViewController = LoginWireframe.createModule()
+        let loginViewController = LoginWireframe().createModule()
         navigationController.viewControllers = [loginViewController]
         return navigationController
     }

@@ -8,6 +8,17 @@
 
 import Foundation
 
+protocol LoginViewInterface: class {
+    func showLoadScreen()
+    func hideLoadScreen()
+    func showEmptyError()
+    func showLoginError()
+}
+
+protocol LoginPresenterInterface: class {
+    func didSelectLoginAction(email: String?, password: String?)
+}
+
 protocol LoginWireframeInterface: class {
-    static func createModule() -> LoginViewController
+    func createModule() -> LoginViewController
 }

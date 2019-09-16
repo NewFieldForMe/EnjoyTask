@@ -14,7 +14,6 @@
 		92EDE1B6232E80A400B3D94E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92EDE1B4232E80A400B3D94E /* Main.storyboard */; };
 		92EDE1B8232E80A500B3D94E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92EDE1B7232E80A500B3D94E /* Assets.xcassets */; };
 		92EDE1BB232E80A500B3D94E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92EDE1B9232E80A500B3D94E /* LaunchScreen.storyboard */; };
-		92EDE1C6232E80A600B3D94E /* EnjoyTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE1C5232E80A600B3D94E /* EnjoyTaskTests.swift */; };
 		92EDE1D1232E80A600B3D94E /* EnjoyTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE1D0232E80A600B3D94E /* EnjoyTaskUITests.swift */; };
 		92EDE1DF232E839C00B3D94E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 92EDE1DE232E839C00B3D94E /* README.md */; };
 		92EDE1EE232F607100B3D94E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE1ED232F607100B3D94E /* RegisterViewController.swift */; };
@@ -29,6 +28,7 @@
 		92EDE20D232FBF1100B3D94E /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE20C232FBF1100B3D94E /* LoginPresenter.swift */; };
 		92EDE20F232FBF1C00B3D94E /* LoginWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE20E232FBF1C00B3D94E /* LoginWireframe.swift */; };
 		92EDE212232FBFF100B3D94E /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE211232FBFF100B3D94E /* RootRouter.swift */; };
+		92EDE215232FCFE200B3D94E /* LoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE214232FCFE200B3D94E /* LoginPresenterTests.swift */; };
 		D074AEB8FEF668DB152CDE01 /* Pods_EnjoyTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3258AA3A0CB58F5F7387AECF /* Pods_EnjoyTaskTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,7 +66,6 @@
 		92EDE1BA232E80A500B3D94E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92EDE1BC232E80A500B3D94E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92EDE1C1232E80A600B3D94E /* EnjoyTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnjoyTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		92EDE1C5232E80A600B3D94E /* EnjoyTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnjoyTaskTests.swift; sourceTree = "<group>"; };
 		92EDE1C7232E80A600B3D94E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92EDE1CC232E80A600B3D94E /* EnjoyTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnjoyTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92EDE1D0232E80A600B3D94E /* EnjoyTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnjoyTaskUITests.swift; sourceTree = "<group>"; };
@@ -84,6 +83,7 @@
 		92EDE20C232FBF1100B3D94E /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		92EDE20E232FBF1C00B3D94E /* LoginWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWireframe.swift; sourceTree = "<group>"; };
 		92EDE211232FBFF100B3D94E /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		92EDE214232FCFE200B3D94E /* LoginPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
 		94679F97D390863DB08381D4 /* Pods-EnjoyTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTaskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnjoyTaskTests/Pods-EnjoyTaskTests.release.xcconfig"; sourceTree = "<group>"; };
 		A0920E5196DDBF7371722DC4 /* Pods-EnjoyTask.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTask.staging.xcconfig"; path = "Pods/Target Support Files/Pods-EnjoyTask/Pods-EnjoyTask.staging.xcconfig"; sourceTree = "<group>"; };
 		A78C30A5CB7389CF8520F13B /* Pods-EnjoyTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTaskUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnjoyTaskUITests/Pods-EnjoyTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -178,7 +178,6 @@
 			children = (
 				92EDE1FA232F701400B3D94E /* GeneratedMocks.swift */,
 				92EDE1F5232F679300B3D94E /* modulesTests */,
-				92EDE1C5232E80A600B3D94E /* EnjoyTaskTests.swift */,
 				92EDE1C7232E80A600B3D94E /* Info.plist */,
 			);
 			path = EnjoyTaskTests;
@@ -260,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				92EDE1F6232F67A200B3D94E /* register-moduleTests */,
+				92EDE213232FCE6500B3D94E /* login-moduleTests */,
 			);
 			path = modulesTests;
 			sourceTree = "<group>";
@@ -278,6 +278,14 @@
 				92EDE211232FBFF100B3D94E /* RootRouter.swift */,
 			);
 			path = settings;
+			sourceTree = "<group>";
+		};
+		92EDE213232FCE6500B3D94E /* login-moduleTests */ = {
+			isa = PBXGroup;
+			children = (
+				92EDE214232FCFE200B3D94E /* LoginPresenterTests.swift */,
+			);
+			path = "login-moduleTests";
 			sourceTree = "<group>";
 		};
 		A22769954FEEE397480C3A92 /* Frameworks */ = {
@@ -497,7 +505,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/modules/register-module/RegisterInterfaces.swift\"\n";
+			shellScript = "# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/modules/register-module/RegisterInterfaces.swift\" \\\n\"${INPUT_DIR}/modules/login-module/LoginInterfaces.swift\"\n";
 		};
 		93543F13F31D1D114827AC7E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -585,7 +593,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92EDE1C6232E80A600B3D94E /* EnjoyTaskTests.swift in Sources */,
+				92EDE215232FCFE200B3D94E /* LoginPresenterTests.swift in Sources */,
 				92EDE1FB232F701400B3D94E /* GeneratedMocks.swift in Sources */,
 				92EDE1F8232F67EA00B3D94E /* RegsiterPresenterTests.swift in Sources */,
 			);

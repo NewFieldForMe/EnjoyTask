@@ -9,18 +9,18 @@
 import UIKit
 
 class LoginWireframe: LoginWireframeInterface {
-    static func createModule() -> LoginViewController {
+    func createModule() -> LoginViewController {
         // Todo: setup presenter
         return viewController
     }
 }
 
 private extension LoginWireframe {
-    static var viewController: LoginViewController {
+    var viewController: LoginViewController {
         return self.mainstoryboard.instantiateViewController(identifier: "loginViewController") as! LoginViewController
     }
 
-    static var mainstoryboard: UIStoryboard {
+    var mainstoryboard: UIStoryboard {
         return UIStoryboard(name: "Main", bundle: Bundle.main)
     }
 }

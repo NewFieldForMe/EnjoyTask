@@ -7,3 +7,21 @@
 //
 
 import Foundation
+
+class LoginPresenter: LoginPresenterInterface {
+    weak var view: LoginViewInterface!
+
+    init(view: LoginViewInterface) {
+        self.view = view
+    }
+
+    func didSelectLoginAction(email: String?, password: String?) {
+        guard email != nil, password != nil else {
+            view.showEmptyError()
+            return
+        }
+    }
+}
+
+// MARK: private
+private extension LoginPresenter { }
