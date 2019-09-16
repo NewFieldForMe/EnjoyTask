@@ -11,7 +11,6 @@
 		6978A43028032911C2C0BD92 /* Pods_EnjoyTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8BFC8050B8A64047884E8A /* Pods_EnjoyTask.framework */; };
 		92EDE1AF232E80A400B3D94E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE1AE232E80A400B3D94E /* AppDelegate.swift */; };
 		92EDE1B1232E80A400B3D94E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE1B0232E80A400B3D94E /* SceneDelegate.swift */; };
-		92EDE1B3232E80A400B3D94E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE1B2232E80A400B3D94E /* ViewController.swift */; };
 		92EDE1B6232E80A400B3D94E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92EDE1B4232E80A400B3D94E /* Main.storyboard */; };
 		92EDE1B8232E80A500B3D94E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92EDE1B7232E80A500B3D94E /* Assets.xcassets */; };
 		92EDE1BB232E80A500B3D94E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92EDE1B9232E80A500B3D94E /* LaunchScreen.storyboard */; };
@@ -62,7 +61,6 @@
 		92EDE1AB232E80A400B3D94E /* EnjoyTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnjoyTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92EDE1AE232E80A400B3D94E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92EDE1B0232E80A400B3D94E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		92EDE1B2232E80A400B3D94E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		92EDE1B5232E80A400B3D94E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92EDE1B7232E80A500B3D94E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92EDE1BA232E80A500B3D94E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -168,7 +166,6 @@
 				92EDE1E8232EA2B700B3D94E /* ui */,
 				92EDE1AE232E80A400B3D94E /* AppDelegate.swift */,
 				92EDE1B0232E80A400B3D94E /* SceneDelegate.swift */,
-				92EDE1B2232E80A400B3D94E /* ViewController.swift */,
 				92EDE1B7232E80A500B3D94E /* Assets.xcassets */,
 				92EDE1BC232E80A500B3D94E /* Info.plist */,
 				92EDE206232F919600B3D94E /* GoogleService-Info.plist */,
@@ -572,7 +569,6 @@
 			files = (
 				92EDE20F232FBF1C00B3D94E /* LoginWireframe.swift in Sources */,
 				92EDE20B232FBF0300B3D94E /* LoginViewController.swift in Sources */,
-				92EDE1B3232E80A400B3D94E /* ViewController.swift in Sources */,
 				92EDE1F2232F60BA00B3D94E /* RegisterPresenter.swift in Sources */,
 				92EDE212232FBFF100B3D94E /* RootRouter.swift in Sources */,
 				92EDE1AF232E80A400B3D94E /* AppDelegate.swift in Sources */,
