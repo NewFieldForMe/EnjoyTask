@@ -17,6 +17,9 @@ CocoaPodsを使っているため、ソースコードをcloneした後 `pod ins
 - GitHub Actions
 - Dark Mode対応
 
+## 採用しているモバイルアーキテクチャ
+- **VIPER**を採用。こちらが[公式サイト](https://cheesecakelabs.com/blog/ios-project-architecture-using-viper/)
+
 ## 単体テストとUIテストについて
 - Cuckooを導入して、モックは自動生成（GeneratedMocks.swift）している。
 - 自動生成ファイルはSwiftLintの対象外にしている。
