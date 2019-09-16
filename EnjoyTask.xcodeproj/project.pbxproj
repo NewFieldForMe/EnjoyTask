@@ -18,6 +18,10 @@
 		92EDE1C6232E80A600B3D94E /* EnjoyTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE1C5232E80A600B3D94E /* EnjoyTaskTests.swift */; };
 		92EDE1D1232E80A600B3D94E /* EnjoyTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE1D0232E80A600B3D94E /* EnjoyTaskUITests.swift */; };
 		92EDE1DF232E839C00B3D94E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 92EDE1DE232E839C00B3D94E /* README.md */; };
+		92EDE1EE232F607100B3D94E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE1ED232F607100B3D94E /* RegisterViewController.swift */; };
+		92EDE1F0232F609900B3D94E /* RegisterInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE1EF232F609900B3D94E /* RegisterInterfaces.swift */; };
+		92EDE1F2232F60BA00B3D94E /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE1F1232F60BA00B3D94E /* RegisterPresenter.swift */; };
+		92EDE1F4232F60C900B3D94E /* RegisterWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE1F3232F60C900B3D94E /* RegisterWireframe.swift */; };
 		D074AEB8FEF668DB152CDE01 /* Pods_EnjoyTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3258AA3A0CB58F5F7387AECF /* Pods_EnjoyTaskTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +64,10 @@
 		92EDE1D0232E80A600B3D94E /* EnjoyTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnjoyTaskUITests.swift; sourceTree = "<group>"; };
 		92EDE1D2232E80A600B3D94E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92EDE1DE232E839C00B3D94E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		92EDE1ED232F607100B3D94E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		92EDE1EF232F609900B3D94E /* RegisterInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInterfaces.swift; sourceTree = "<group>"; };
+		92EDE1F1232F60BA00B3D94E /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
+		92EDE1F3232F60C900B3D94E /* RegisterWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterWireframe.swift; sourceTree = "<group>"; };
 		94679F97D390863DB08381D4 /* Pods-EnjoyTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTaskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnjoyTaskTests/Pods-EnjoyTaskTests.release.xcconfig"; sourceTree = "<group>"; };
 		A78C30A5CB7389CF8520F13B /* Pods-EnjoyTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTaskUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnjoyTaskUITests/Pods-EnjoyTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AF99FF88AF182C80D7DD7883 /* Pods-EnjoyTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTaskTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EnjoyTaskTests/Pods-EnjoyTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,12 +140,13 @@
 		92EDE1AD232E80A400B3D94E /* EnjoyTask */ = {
 			isa = PBXGroup;
 			children = (
+				92EDE1EA232F5F4500B3D94E /* data */,
+				92EDE1E4232EA20400B3D94E /* modules */,
+				92EDE1E8232EA2B700B3D94E /* ui */,
 				92EDE1AE232E80A400B3D94E /* AppDelegate.swift */,
 				92EDE1B0232E80A400B3D94E /* SceneDelegate.swift */,
 				92EDE1B2232E80A400B3D94E /* ViewController.swift */,
-				92EDE1B4232E80A400B3D94E /* Main.storyboard */,
 				92EDE1B7232E80A500B3D94E /* Assets.xcassets */,
-				92EDE1B9232E80A500B3D94E /* LaunchScreen.storyboard */,
 				92EDE1BC232E80A500B3D94E /* Info.plist */,
 			);
 			path = EnjoyTask;
@@ -159,6 +168,81 @@
 				92EDE1D2232E80A600B3D94E /* Info.plist */,
 			);
 			path = EnjoyTaskUITests;
+			sourceTree = "<group>";
+		};
+		92EDE1E4232EA20400B3D94E /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				92EDE1E9232F5F1300B3D94E /* register-module */,
+				92EDE1E7232EA29800B3D94E /* edittask-module */,
+				92EDE1E5232EA23A00B3D94E /* login-module */,
+				92EDE1E6232EA25C00B3D94E /* tasklist-module */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		92EDE1E5232EA23A00B3D94E /* login-module */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "login-module";
+			sourceTree = "<group>";
+		};
+		92EDE1E6232EA25C00B3D94E /* tasklist-module */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "tasklist-module";
+			sourceTree = "<group>";
+		};
+		92EDE1E7232EA29800B3D94E /* edittask-module */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "edittask-module";
+			sourceTree = "<group>";
+		};
+		92EDE1E8232EA2B700B3D94E /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				92EDE1B4232E80A400B3D94E /* Main.storyboard */,
+				92EDE1B9232E80A500B3D94E /* LaunchScreen.storyboard */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		92EDE1E9232F5F1300B3D94E /* register-module */ = {
+			isa = PBXGroup;
+			children = (
+				92EDE1EF232F609900B3D94E /* RegisterInterfaces.swift */,
+				92EDE1ED232F607100B3D94E /* RegisterViewController.swift */,
+				92EDE1F1232F60BA00B3D94E /* RegisterPresenter.swift */,
+				92EDE1F3232F60C900B3D94E /* RegisterWireframe.swift */,
+			);
+			path = "register-module";
+			sourceTree = "<group>";
+		};
+		92EDE1EA232F5F4500B3D94E /* data */ = {
+			isa = PBXGroup;
+			children = (
+				92EDE1EC232F5F8F00B3D94E /* entity */,
+				92EDE1EB232F5F6100B3D94E /* interactor */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		92EDE1EB232F5F6100B3D94E /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		92EDE1EC232F5F8F00B3D94E /* entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = entity;
 			sourceTree = "<group>";
 		};
 		A22769954FEEE397480C3A92 /* Frameworks */ = {
@@ -394,8 +478,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				92EDE1B3232E80A400B3D94E /* ViewController.swift in Sources */,
+				92EDE1F2232F60BA00B3D94E /* RegisterPresenter.swift in Sources */,
 				92EDE1AF232E80A400B3D94E /* AppDelegate.swift in Sources */,
 				92EDE1B1232E80A400B3D94E /* SceneDelegate.swift in Sources */,
+				92EDE1F0232F609900B3D94E /* RegisterInterfaces.swift in Sources */,
+				92EDE1F4232F60C900B3D94E /* RegisterWireframe.swift in Sources */,
+				92EDE1EE232F607100B3D94E /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
