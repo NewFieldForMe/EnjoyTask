@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+protocol RegisterViewInterface: class {
+    func showLoadScreen()
+    func hideLoadScreen()
+    func showValidationError()
+}
+
+protocol RegisterPresenterInterface: class {
+    func didSelectRegisterAction(email: String?, password: String?)
+}

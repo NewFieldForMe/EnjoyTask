@@ -7,3 +7,21 @@
 //
 
 import Foundation
+
+class RegisterPresenter: RegisterPresenterInterface {
+    weak var view: RegisterViewInterface!
+
+    init(view: RegisterViewInterface) {
+        self.view = view
+    }
+
+    func didSelectRegisterAction(email: String?, password: String?) {
+        guard email != nil, password != nil else {
+            view.showValidationError()
+            return
+        }
+    }
+}
+
+// MARK: private
+private extension RegisterPresenter { }

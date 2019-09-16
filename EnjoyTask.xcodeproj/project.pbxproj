@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,8 @@
 		92EDE1F0232F609900B3D94E /* RegisterInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE1EF232F609900B3D94E /* RegisterInterfaces.swift */; };
 		92EDE1F2232F60BA00B3D94E /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE1F1232F60BA00B3D94E /* RegisterPresenter.swift */; };
 		92EDE1F4232F60C900B3D94E /* RegisterWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE1F3232F60C900B3D94E /* RegisterWireframe.swift */; };
+		92EDE1F8232F67EA00B3D94E /* RegsiterPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE1F7232F67EA00B3D94E /* RegsiterPresenterTests.swift */; };
+		92EDE1FB232F701400B3D94E /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE1FA232F701400B3D94E /* GeneratedMocks.swift */; };
 		D074AEB8FEF668DB152CDE01 /* Pods_EnjoyTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3258AA3A0CB58F5F7387AECF /* Pods_EnjoyTaskTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +70,8 @@
 		92EDE1EF232F609900B3D94E /* RegisterInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInterfaces.swift; sourceTree = "<group>"; };
 		92EDE1F1232F60BA00B3D94E /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
 		92EDE1F3232F60C900B3D94E /* RegisterWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterWireframe.swift; sourceTree = "<group>"; };
+		92EDE1F7232F67EA00B3D94E /* RegsiterPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegsiterPresenterTests.swift; sourceTree = "<group>"; };
+		92EDE1FA232F701400B3D94E /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		94679F97D390863DB08381D4 /* Pods-EnjoyTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTaskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnjoyTaskTests/Pods-EnjoyTaskTests.release.xcconfig"; sourceTree = "<group>"; };
 		A78C30A5CB7389CF8520F13B /* Pods-EnjoyTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTaskUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnjoyTaskUITests/Pods-EnjoyTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AF99FF88AF182C80D7DD7883 /* Pods-EnjoyTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTaskTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EnjoyTaskTests/Pods-EnjoyTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -155,6 +159,8 @@
 		92EDE1C4232E80A600B3D94E /* EnjoyTaskTests */ = {
 			isa = PBXGroup;
 			children = (
+				92EDE1FA232F701400B3D94E /* GeneratedMocks.swift */,
+				92EDE1F5232F679300B3D94E /* modulesTests */,
 				92EDE1C5232E80A600B3D94E /* EnjoyTaskTests.swift */,
 				92EDE1C7232E80A600B3D94E /* Info.plist */,
 			);
@@ -245,6 +251,22 @@
 			path = entity;
 			sourceTree = "<group>";
 		};
+		92EDE1F5232F679300B3D94E /* modulesTests */ = {
+			isa = PBXGroup;
+			children = (
+				92EDE1F6232F67A200B3D94E /* register-moduleTests */,
+			);
+			path = modulesTests;
+			sourceTree = "<group>";
+		};
+		92EDE1F6232F67A200B3D94E /* register-moduleTests */ = {
+			isa = PBXGroup;
+			children = (
+				92EDE1F7232F67EA00B3D94E /* RegsiterPresenterTests.swift */,
+			);
+			path = "register-moduleTests";
+			sourceTree = "<group>";
+		};
 		A22769954FEEE397480C3A92 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,9 +304,11 @@
 			buildConfigurationList = 92EDE1D8232E80A600B3D94E /* Build configuration list for PBXNativeTarget "EnjoyTaskTests" */;
 			buildPhases = (
 				9DA8AFB038096CCE1636CAF7 /* [CP] Check Pods Manifest.lock */,
+				92EDE1F9232F6DDF00B3D94E /* ShellScript */,
 				92EDE1BD232E80A600B3D94E /* Sources */,
 				92EDE1BE232E80A600B3D94E /* Frameworks */,
 				92EDE1BF232E80A600B3D94E /* Resources */,
+				2373B4DBF24212E852499043 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -387,6 +411,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2373B4DBF24212E852499043 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EnjoyTaskTests/Pods-EnjoyTaskTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EnjoyTaskTests/Pods-EnjoyTaskTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EnjoyTaskTests/Pods-EnjoyTaskTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		65FEDCD706753A1AD47E84EC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -425,6 +466,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which \"${PODS_ROOT}/SwiftLint/swiftlint\" >/dev/null; then\n${PODS_ROOT}/SwiftLint/swiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		92EDE1F9232F6DDF00B3D94E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/modules/register-module/RegisterInterfaces.swift\"\n";
 		};
 		9DA8AFB038096CCE1636CAF7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -492,6 +550,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				92EDE1C6232E80A600B3D94E /* EnjoyTaskTests.swift in Sources */,
+				92EDE1FB232F701400B3D94E /* GeneratedMocks.swift in Sources */,
+				92EDE1F8232F67EA00B3D94E /* RegsiterPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

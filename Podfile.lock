@@ -1,16 +1,22 @@
 PODS:
-  - SwiftLint (0.27.0)
+  - Cuckoo (1.2.0):
+    - Cuckoo/Swift (= 1.2.0)
+  - Cuckoo/Swift (1.2.0)
+  - SwiftLint (0.35.0)
 
 DEPENDENCIES:
+  - Cuckoo
   - SwiftLint
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Cuckoo
     - SwiftLint
 
 SPEC CHECKSUMS:
-  SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
+  Cuckoo: f5f4e7c308c512cc2dedbdce23f5dc6985cb5173
+  SwiftLint: 5553187048b900c91aa03552807681bb6b027846
 
-PODFILE CHECKSUM: 8c1d0d47e6b1a0ccbd5ea81a19b9ddbdbbef7380
+PODFILE CHECKSUM: 3059074a4869cf9dd2cb5431413e4a216053a2c2
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.7.5

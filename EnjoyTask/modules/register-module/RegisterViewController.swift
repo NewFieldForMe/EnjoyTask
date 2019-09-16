@@ -6,4 +6,21 @@
 //  Copyright © 2019 yamadaryo. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class RegisterViewController: UIViewController {
+}
+
+extension RegisterViewController: RegisterViewInterface {
+    func showLoadScreen() {
+        // Todo: Implementation
+    }
+
+    func hideLoadScreen() {
+        // Todo: Implementation
+    }
+
+    func showValidationError() {
+        // Todo: Implementation
+    }
+}
