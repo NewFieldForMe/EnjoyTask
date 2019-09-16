@@ -6,4 +6,8 @@
 //  Copyright © 2019 yamadaryo. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class LoginViewController: UIViewController {
+
+}

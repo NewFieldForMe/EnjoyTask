@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+protocol LoginWireframeInterface: class {
+    static func createModule() -> LoginViewController
+}
