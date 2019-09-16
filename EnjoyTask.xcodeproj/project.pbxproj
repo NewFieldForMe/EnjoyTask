@@ -189,9 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				92EDE1E9232F5F1300B3D94E /* register-module */,
-				92EDE1E7232EA29800B3D94E /* edittask-module */,
 				92EDE1E5232EA23A00B3D94E /* login-module */,
-				92EDE1E6232EA25C00B3D94E /* tasklist-module */,
 			);
 			path = modules;
 			sourceTree = "<group>";
@@ -201,20 +199,6 @@
 			children = (
 			);
 			path = "login-module";
-			sourceTree = "<group>";
-		};
-		92EDE1E6232EA25C00B3D94E /* tasklist-module */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "tasklist-module";
-			sourceTree = "<group>";
-		};
-		92EDE1E7232EA29800B3D94E /* edittask-module */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "edittask-module";
 			sourceTree = "<group>";
 		};
 		92EDE1E8232EA2B700B3D94E /* ui */ = {
