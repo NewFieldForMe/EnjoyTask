@@ -16,3 +16,8 @@ CocoaPodsを使っているため、ソースコードをcloneした後 `pod ins
 - 単体テスト、UIテスト
 - GitHub Actions
 - Dark Mode対応
+
+## 単体テストとUIテストについて
+- Cuckooを導入して、モックは自動生成（GeneratedMocks.swift）している。
+- 自動生成ファイルはSwiftLintの対象外にしている。
+- モックが必要なProtocolを追加した場合は、TestターゲットのRun ScriptにINPUT_FILEとして追加すること
