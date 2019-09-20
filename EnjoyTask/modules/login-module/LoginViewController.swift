@@ -20,6 +20,16 @@ class LoginViewController: UIViewController {
             setPlaceholderLabelColor(passwordTextField)
         }
     }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
+            target: self,
+            action: #selector(dismissKeyboard)
+        )
+
+        view.addGestureRecognizer(tap)
+    }
 }
 
 private extension LoginViewController {
@@ -27,5 +37,9 @@ private extension LoginViewController {
         let iVar = class_getInstanceVariable(UITextField.self, "_placeholderLabel")!
         let placeholderLabel = object_getIvar(textField, iVar) as! UILabel
         placeholderLabel.textColor = .white
+    }
+
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }
