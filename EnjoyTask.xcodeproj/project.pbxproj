@@ -761,7 +761,8 @@
 			baseConfigurationReference = 6B2E4D5A7FFC33B9F049DB94 /* Pods-EnjoyTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = B7ECV6NH3D;
 				INFOPLIST_FILE = EnjoyTask/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -770,6 +771,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yamadaryo.EnjoyTask.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = EnjoyTask_dev;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
