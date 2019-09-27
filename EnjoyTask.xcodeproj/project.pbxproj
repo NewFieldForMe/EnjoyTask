@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		3C8C334B642C0C1043B20813 /* Pods_EnjoyTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B068ABC6D357092DA7A0339 /* Pods_EnjoyTaskUITests.framework */; };
 		6978A43028032911C2C0BD92 /* Pods_EnjoyTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8BFC8050B8A64047884E8A /* Pods_EnjoyTask.framework */; };
+		8EDF6FE7233E048200656702 /* AuthInfoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF6FE6233E048200656702 /* AuthInfoEntity.swift */; };
+		8EDF6FE9233E055C00656702 /* AuthInfoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF6FE8233E055C00656702 /* AuthInfoInteractor.swift */; };
+		8EDF6FEB233E058800656702 /* UseCaseInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF6FEA233E058800656702 /* UseCaseInterface.swift */; };
 		92EDE1AF232E80A400B3D94E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE1AE232E80A400B3D94E /* AppDelegate.swift */; };
 		92EDE1B1232E80A400B3D94E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE1B0232E80A400B3D94E /* SceneDelegate.swift */; };
 		92EDE1B6232E80A400B3D94E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92EDE1B4232E80A400B3D94E /* Main.storyboard */; };
@@ -58,6 +61,9 @@
 		6700367A0DF5E7F1960F2BBC /* Pods-EnjoyTaskUITests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTaskUITests.staging.xcconfig"; path = "Pods/Target Support Files/Pods-EnjoyTaskUITests/Pods-EnjoyTaskUITests.staging.xcconfig"; sourceTree = "<group>"; };
 		6B2E4D5A7FFC33B9F049DB94 /* Pods-EnjoyTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EnjoyTask/Pods-EnjoyTask.debug.xcconfig"; sourceTree = "<group>"; };
 		71A60CC96F4D6DECFC9CC401 /* Pods-EnjoyTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnjoyTask/Pods-EnjoyTask.release.xcconfig"; sourceTree = "<group>"; };
+		8EDF6FE6233E048200656702 /* AuthInfoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInfoEntity.swift; sourceTree = SOURCE_ROOT; };
+		8EDF6FE8233E055C00656702 /* AuthInfoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInfoInteractor.swift; sourceTree = SOURCE_ROOT; };
+		8EDF6FEA233E058800656702 /* UseCaseInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseInterface.swift; sourceTree = SOURCE_ROOT; };
 		92EDE1AB232E80A400B3D94E /* EnjoyTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnjoyTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92EDE1AE232E80A400B3D94E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92EDE1B0232E80A400B3D94E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -237,6 +243,7 @@
 			children = (
 				92EDE1EC232F5F8F00B3D94E /* entity */,
 				92EDE1EB232F5F6100B3D94E /* interactor */,
+				8EDF6FEA233E058800656702 /* UseCaseInterface.swift */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -244,6 +251,7 @@
 		92EDE1EB232F5F6100B3D94E /* interactor */ = {
 			isa = PBXGroup;
 			children = (
+				8EDF6FE8233E055C00656702 /* AuthInfoInteractor.swift */,
 			);
 			path = interactor;
 			sourceTree = "<group>";
@@ -251,6 +259,7 @@
 		92EDE1EC232F5F8F00B3D94E /* entity */ = {
 			isa = PBXGroup;
 			children = (
+				8EDF6FE6233E048200656702 /* AuthInfoEntity.swift */,
 			);
 			path = entity;
 			sourceTree = "<group>";
@@ -577,15 +586,18 @@
 			files = (
 				92EDE20F232FBF1C00B3D94E /* LoginWireframe.swift in Sources */,
 				92EDE20B232FBF0300B3D94E /* LoginViewController.swift in Sources */,
+				8EDF6FE7233E048200656702 /* AuthInfoEntity.swift in Sources */,
 				92EDE1F2232F60BA00B3D94E /* RegisterPresenter.swift in Sources */,
 				92EDE212232FBFF100B3D94E /* RootRouter.swift in Sources */,
 				92EDE1AF232E80A400B3D94E /* AppDelegate.swift in Sources */,
 				92EDE20D232FBF1100B3D94E /* LoginPresenter.swift in Sources */,
+				8EDF6FEB233E058800656702 /* UseCaseInterface.swift in Sources */,
 				92EDE1B1232E80A400B3D94E /* SceneDelegate.swift in Sources */,
 				92EDE1F0232F609900B3D94E /* RegisterInterfaces.swift in Sources */,
 				92EDE209232FBEF700B3D94E /* LoginInterfaces.swift in Sources */,
 				92EDE1F4232F60C900B3D94E /* RegisterWireframe.swift in Sources */,
 				92EDE1EE232F607100B3D94E /* RegisterViewController.swift in Sources */,
+				8EDF6FE9233E055C00656702 /* AuthInfoInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
