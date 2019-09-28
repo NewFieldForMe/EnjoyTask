@@ -12,6 +12,7 @@
 		8EDF6FE7233E048200656702 /* AuthInfoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF6FE6233E048200656702 /* AuthInfoEntity.swift */; };
 		8EDF6FE9233E055C00656702 /* AuthInfoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF6FE8233E055C00656702 /* AuthInfoInteractor.swift */; };
 		8EDF6FEB233E058800656702 /* UseCaseInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF6FEA233E058800656702 /* UseCaseInterface.swift */; };
+		9210A0A1233F9CC20086556C /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9210A0A0233F9CC20086556C /* AccessibilityIdentifiers.swift */; };
 		92EDE1AF232E80A400B3D94E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE1AE232E80A400B3D94E /* AppDelegate.swift */; };
 		92EDE1B1232E80A400B3D94E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE1B0232E80A400B3D94E /* SceneDelegate.swift */; };
 		92EDE1B6232E80A400B3D94E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92EDE1B4232E80A400B3D94E /* Main.storyboard */; };
@@ -64,6 +65,7 @@
 		8EDF6FE6233E048200656702 /* AuthInfoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInfoEntity.swift; sourceTree = SOURCE_ROOT; };
 		8EDF6FE8233E055C00656702 /* AuthInfoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInfoInteractor.swift; sourceTree = SOURCE_ROOT; };
 		8EDF6FEA233E058800656702 /* UseCaseInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseInterface.swift; sourceTree = SOURCE_ROOT; };
+		9210A0A0233F9CC20086556C /* AccessibilityIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityIdentifiers.swift; sourceTree = "<group>"; };
 		92EDE1AB232E80A400B3D94E /* EnjoyTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnjoyTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92EDE1AE232E80A400B3D94E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92EDE1B0232E80A400B3D94E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -285,6 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				92EDE211232FBFF100B3D94E /* RootRouter.swift */,
+				9210A0A0233F9CC20086556C /* AccessibilityIdentifiers.swift */,
 			);
 			path = settings;
 			sourceTree = "<group>";
@@ -596,6 +599,7 @@
 				92EDE1F0232F609900B3D94E /* RegisterInterfaces.swift in Sources */,
 				92EDE209232FBEF700B3D94E /* LoginInterfaces.swift in Sources */,
 				92EDE1F4232F60C900B3D94E /* RegisterWireframe.swift in Sources */,
+				9210A0A1233F9CC20086556C /* AccessibilityIdentifiers.swift in Sources */,
 				92EDE1EE232F607100B3D94E /* RegisterViewController.swift in Sources */,
 				8EDF6FE9233E055C00656702 /* AuthInfoInteractor.swift in Sources */,
 			);

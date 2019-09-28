@@ -11,12 +11,14 @@ import UIKit
 class LoginViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField! {
         didSet {
+            emailTextField.accessibilityIdentifier = AccessibilityIdentifiers.Login.emailTextField
             setPlaceholderLabelColor(emailTextField)
         }
     }
 
     @IBOutlet weak var passwordTextField: UITextField! {
         didSet {
+            passwordTextField.accessibilityIdentifier = AccessibilityIdentifiers.Login.passwordTextField
             setPlaceholderLabelColor(passwordTextField)
         }
     }
