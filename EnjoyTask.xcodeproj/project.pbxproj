@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3C8C334B642C0C1043B20813 /* Pods_EnjoyTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B068ABC6D357092DA7A0339 /* Pods_EnjoyTaskUITests.framework */; };
-		6978A43028032911C2C0BD92 /* Pods_EnjoyTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8BFC8050B8A64047884E8A /* Pods_EnjoyTask.framework */; };
+		4EDDE27430B87775AFBF6900 /* Pods_EnjoyTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C284C4F7141A1ADEEF38B1A0 /* Pods_EnjoyTaskTests.framework */; };
+		59D953951557A72FAF2B592F /* Pods_EnjoyTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6573E63806676D55D2A50E /* Pods_EnjoyTask.framework */; };
+		5D39894038D899AAA76947E2 /* Pods_EnjoyTask_EnjoyTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2285E0969D44EE849F1BA09F /* Pods_EnjoyTask_EnjoyTaskUITests.framework */; };
 		8EDF6FE7233E048200656702 /* AuthInfoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF6FE6233E048200656702 /* AuthInfoEntity.swift */; };
 		8EDF6FE9233E055C00656702 /* AuthInfoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF6FE8233E055C00656702 /* AuthInfoInteractor.swift */; };
 		8EDF6FEB233E058800656702 /* UseCaseInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF6FEA233E058800656702 /* UseCaseInterface.swift */; };
 		9210A0A1233F9CC20086556C /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9210A0A0233F9CC20086556C /* AccessibilityIdentifiers.swift */; };
+		929DF7C0233FA3510005562E /* LoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929DF7BF233FA3510005562E /* LoginUITests.swift */; };
 		92EDE1AF232E80A400B3D94E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE1AE232E80A400B3D94E /* AppDelegate.swift */; };
 		92EDE1B1232E80A400B3D94E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE1B0232E80A400B3D94E /* SceneDelegate.swift */; };
 		92EDE1B6232E80A400B3D94E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92EDE1B4232E80A400B3D94E /* Main.storyboard */; };
@@ -33,7 +35,6 @@
 		92EDE20F232FBF1C00B3D94E /* LoginWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE20E232FBF1C00B3D94E /* LoginWireframe.swift */; };
 		92EDE212232FBFF100B3D94E /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE211232FBFF100B3D94E /* RootRouter.swift */; };
 		92EDE215232FCFE200B3D94E /* LoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE214232FCFE200B3D94E /* LoginPresenterTests.swift */; };
-		D074AEB8FEF668DB152CDE01 /* Pods_EnjoyTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3258AA3A0CB58F5F7387AECF /* Pods_EnjoyTaskTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,18 +55,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08ED0FB6B057FCE3A225A8FF /* Pods-EnjoyTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTaskUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EnjoyTaskUITests/Pods-EnjoyTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		0B068ABC6D357092DA7A0339 /* Pods_EnjoyTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnjoyTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		22E04939F9A3C2DDABFA06A1 /* Pods-EnjoyTaskTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTaskTests.staging.xcconfig"; path = "Pods/Target Support Files/Pods-EnjoyTaskTests/Pods-EnjoyTaskTests.staging.xcconfig"; sourceTree = "<group>"; };
-		2D8BFC8050B8A64047884E8A /* Pods_EnjoyTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnjoyTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3258AA3A0CB58F5F7387AECF /* Pods_EnjoyTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnjoyTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6700367A0DF5E7F1960F2BBC /* Pods-EnjoyTaskUITests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTaskUITests.staging.xcconfig"; path = "Pods/Target Support Files/Pods-EnjoyTaskUITests/Pods-EnjoyTaskUITests.staging.xcconfig"; sourceTree = "<group>"; };
-		6B2E4D5A7FFC33B9F049DB94 /* Pods-EnjoyTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EnjoyTask/Pods-EnjoyTask.debug.xcconfig"; sourceTree = "<group>"; };
-		71A60CC96F4D6DECFC9CC401 /* Pods-EnjoyTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnjoyTask/Pods-EnjoyTask.release.xcconfig"; sourceTree = "<group>"; };
+		07BF8186AAAFBAFBD802AD00 /* Pods-EnjoyTask-EnjoyTaskUITests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTask-EnjoyTaskUITests.staging.xcconfig"; path = "Target Support Files/Pods-EnjoyTask-EnjoyTaskUITests/Pods-EnjoyTask-EnjoyTaskUITests.staging.xcconfig"; sourceTree = "<group>"; };
+		0C6573E63806676D55D2A50E /* Pods_EnjoyTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnjoyTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14472CBB385B6EE829FFDE77 /* Pods-EnjoyTask-EnjoyTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTask-EnjoyTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-EnjoyTask-EnjoyTaskUITests/Pods-EnjoyTask-EnjoyTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2285E0969D44EE849F1BA09F /* Pods_EnjoyTask_EnjoyTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnjoyTask_EnjoyTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C7DFC52220A859244B11FC8 /* Pods-EnjoyTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTask.debug.xcconfig"; path = "Target Support Files/Pods-EnjoyTask/Pods-EnjoyTask.debug.xcconfig"; sourceTree = "<group>"; };
+		6DF7B13B051EE2538598957A /* Pods-EnjoyTask-EnjoyTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTask-EnjoyTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-EnjoyTask-EnjoyTaskUITests/Pods-EnjoyTask-EnjoyTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		87BD2DC32F3B19CCA4A12113 /* Pods-EnjoyTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTask.release.xcconfig"; path = "Target Support Files/Pods-EnjoyTask/Pods-EnjoyTask.release.xcconfig"; sourceTree = "<group>"; };
 		8EDF6FE6233E048200656702 /* AuthInfoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInfoEntity.swift; sourceTree = SOURCE_ROOT; };
 		8EDF6FE8233E055C00656702 /* AuthInfoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInfoInteractor.swift; sourceTree = SOURCE_ROOT; };
 		8EDF6FEA233E058800656702 /* UseCaseInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseInterface.swift; sourceTree = SOURCE_ROOT; };
 		9210A0A0233F9CC20086556C /* AccessibilityIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityIdentifiers.swift; sourceTree = "<group>"; };
+		929DF7BF233FA3510005562E /* LoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUITests.swift; sourceTree = "<group>"; };
 		92EDE1AB232E80A400B3D94E /* EnjoyTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnjoyTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92EDE1AE232E80A400B3D94E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92EDE1B0232E80A400B3D94E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,10 +93,11 @@
 		92EDE20E232FBF1C00B3D94E /* LoginWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWireframe.swift; sourceTree = "<group>"; };
 		92EDE211232FBFF100B3D94E /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
 		92EDE214232FCFE200B3D94E /* LoginPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
-		94679F97D390863DB08381D4 /* Pods-EnjoyTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTaskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnjoyTaskTests/Pods-EnjoyTaskTests.release.xcconfig"; sourceTree = "<group>"; };
-		A0920E5196DDBF7371722DC4 /* Pods-EnjoyTask.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTask.staging.xcconfig"; path = "Pods/Target Support Files/Pods-EnjoyTask/Pods-EnjoyTask.staging.xcconfig"; sourceTree = "<group>"; };
-		A78C30A5CB7389CF8520F13B /* Pods-EnjoyTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTaskUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnjoyTaskUITests/Pods-EnjoyTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
-		AF99FF88AF182C80D7DD7883 /* Pods-EnjoyTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTaskTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EnjoyTaskTests/Pods-EnjoyTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ADCDE0EC3DAB1D360CFE21F8 /* Pods-EnjoyTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-EnjoyTaskTests/Pods-EnjoyTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BB7847EB3E09F980D12214A8 /* Pods-EnjoyTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTaskTests.release.xcconfig"; path = "Target Support Files/Pods-EnjoyTaskTests/Pods-EnjoyTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		C284C4F7141A1ADEEF38B1A0 /* Pods_EnjoyTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnjoyTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC4238F7338FE7848E6E8F6C /* Pods-EnjoyTask.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTask.staging.xcconfig"; path = "Target Support Files/Pods-EnjoyTask/Pods-EnjoyTask.staging.xcconfig"; sourceTree = "<group>"; };
+		E0A1435834DA3EABF56087E3 /* Pods-EnjoyTaskTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTaskTests.staging.xcconfig"; path = "Target Support Files/Pods-EnjoyTaskTests/Pods-EnjoyTaskTests.staging.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6978A43028032911C2C0BD92 /* Pods_EnjoyTask.framework in Frameworks */,
+				59D953951557A72FAF2B592F /* Pods_EnjoyTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,7 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D074AEB8FEF668DB152CDE01 /* Pods_EnjoyTaskTests.framework in Frameworks */,
+				4EDDE27430B87775AFBF6900 /* Pods_EnjoyTaskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,27 +121,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C8C334B642C0C1043B20813 /* Pods_EnjoyTaskUITests.framework in Frameworks */,
+				5D39894038D899AAA76947E2 /* Pods_EnjoyTask_EnjoyTaskUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1D494912891CF49E465F79A2 /* Pods */ = {
+		72E925284C95108D26C6301F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6B2E4D5A7FFC33B9F049DB94 /* Pods-EnjoyTask.debug.xcconfig */,
-				71A60CC96F4D6DECFC9CC401 /* Pods-EnjoyTask.release.xcconfig */,
-				AF99FF88AF182C80D7DD7883 /* Pods-EnjoyTaskTests.debug.xcconfig */,
-				94679F97D390863DB08381D4 /* Pods-EnjoyTaskTests.release.xcconfig */,
-				08ED0FB6B057FCE3A225A8FF /* Pods-EnjoyTaskUITests.debug.xcconfig */,
-				A78C30A5CB7389CF8520F13B /* Pods-EnjoyTaskUITests.release.xcconfig */,
-				A0920E5196DDBF7371722DC4 /* Pods-EnjoyTask.staging.xcconfig */,
-				22E04939F9A3C2DDABFA06A1 /* Pods-EnjoyTaskTests.staging.xcconfig */,
-				6700367A0DF5E7F1960F2BBC /* Pods-EnjoyTaskUITests.staging.xcconfig */,
+				0C6573E63806676D55D2A50E /* Pods_EnjoyTask.framework */,
+				2285E0969D44EE849F1BA09F /* Pods_EnjoyTask_EnjoyTaskUITests.framework */,
+				C284C4F7141A1ADEEF38B1A0 /* Pods_EnjoyTaskTests.framework */,
 			);
-			name = Pods;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		929DF7BC233FA2EF0005562E /* modulesTests */ = {
+			isa = PBXGroup;
+			children = (
+				929DF7BF233FA3510005562E /* LoginUITests.swift */,
+			);
+			path = modulesTests;
 			sourceTree = "<group>";
 		};
 		92EDE1A2232E80A400B3D94E = {
@@ -150,8 +154,8 @@
 				92EDE1C4232E80A600B3D94E /* EnjoyTaskTests */,
 				92EDE1CF232E80A600B3D94E /* EnjoyTaskUITests */,
 				92EDE1AC232E80A400B3D94E /* Products */,
-				1D494912891CF49E465F79A2 /* Pods */,
-				A22769954FEEE397480C3A92 /* Frameworks */,
+				F4F3727B50A4D3C4751831B3 /* Pods */,
+				72E925284C95108D26C6301F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -194,6 +198,7 @@
 		92EDE1CF232E80A600B3D94E /* EnjoyTaskUITests */ = {
 			isa = PBXGroup;
 			children = (
+				929DF7BC233FA2EF0005562E /* modulesTests */,
 				92EDE1D0232E80A600B3D94E /* EnjoyTaskUITests.swift */,
 				92EDE1D2232E80A600B3D94E /* Info.plist */,
 			);
@@ -300,14 +305,21 @@
 			path = "login-moduleTests";
 			sourceTree = "<group>";
 		};
-		A22769954FEEE397480C3A92 /* Frameworks */ = {
+		F4F3727B50A4D3C4751831B3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2D8BFC8050B8A64047884E8A /* Pods_EnjoyTask.framework */,
-				3258AA3A0CB58F5F7387AECF /* Pods_EnjoyTaskTests.framework */,
-				0B068ABC6D357092DA7A0339 /* Pods_EnjoyTaskUITests.framework */,
+				3C7DFC52220A859244B11FC8 /* Pods-EnjoyTask.debug.xcconfig */,
+				CC4238F7338FE7848E6E8F6C /* Pods-EnjoyTask.staging.xcconfig */,
+				87BD2DC32F3B19CCA4A12113 /* Pods-EnjoyTask.release.xcconfig */,
+				14472CBB385B6EE829FFDE77 /* Pods-EnjoyTask-EnjoyTaskUITests.debug.xcconfig */,
+				07BF8186AAAFBAFBD802AD00 /* Pods-EnjoyTask-EnjoyTaskUITests.staging.xcconfig */,
+				6DF7B13B051EE2538598957A /* Pods-EnjoyTask-EnjoyTaskUITests.release.xcconfig */,
+				ADCDE0EC3DAB1D360CFE21F8 /* Pods-EnjoyTaskTests.debug.xcconfig */,
+				E0A1435834DA3EABF56087E3 /* Pods-EnjoyTaskTests.staging.xcconfig */,
+				BB7847EB3E09F980D12214A8 /* Pods-EnjoyTaskTests.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,12 +329,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92EDE1D5232E80A600B3D94E /* Build configuration list for PBXNativeTarget "EnjoyTask" */;
 			buildPhases = (
-				65FEDCD706753A1AD47E84EC /* [CP] Check Pods Manifest.lock */,
+				6C08187FD9609FBEF7ABEB04 /* [CP] Check Pods Manifest.lock */,
 				92EDE1A7232E80A400B3D94E /* Sources */,
 				92EDE1A8232E80A400B3D94E /* Frameworks */,
 				92EDE1A9232E80A400B3D94E /* Resources */,
 				92EDE1E3232E93FD00B3D94E /* ShellScript */,
-				93543F13F31D1D114827AC7E /* [CP] Embed Pods Frameworks */,
+				04A4A1419BD767CE09042D92 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -337,12 +349,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92EDE1D8232E80A600B3D94E /* Build configuration list for PBXNativeTarget "EnjoyTaskTests" */;
 			buildPhases = (
-				9DA8AFB038096CCE1636CAF7 /* [CP] Check Pods Manifest.lock */,
+				CBC0C74961C6119D76FF468A /* [CP] Check Pods Manifest.lock */,
 				92EDE1F9232F6DDF00B3D94E /* ShellScript */,
 				92EDE1BD232E80A600B3D94E /* Sources */,
 				92EDE1BE232E80A600B3D94E /* Frameworks */,
 				92EDE1BF232E80A600B3D94E /* Resources */,
-				2373B4DBF24212E852499043 /* [CP] Embed Pods Frameworks */,
+				6A7409229D5EB1F0F720B31F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -358,10 +370,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92EDE1DB232E80A600B3D94E /* Build configuration list for PBXNativeTarget "EnjoyTaskUITests" */;
 			buildPhases = (
-				F7F9C93111402A0A7B8A2C7B /* [CP] Check Pods Manifest.lock */,
+				6174DA96992FBE69A262E332 /* [CP] Check Pods Manifest.lock */,
 				92EDE1C8232E80A600B3D94E /* Sources */,
 				92EDE1C9232E80A600B3D94E /* Frameworks */,
 				92EDE1CA232E80A600B3D94E /* Resources */,
+				B65B1DCABC5850246E9CF4FD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -446,7 +459,46 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2373B4DBF24212E852499043 /* [CP] Embed Pods Frameworks */ = {
+		04A4A1419BD767CE09042D92 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EnjoyTask/Pods-EnjoyTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EnjoyTask/Pods-EnjoyTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EnjoyTask/Pods-EnjoyTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6174DA96992FBE69A262E332 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EnjoyTask-EnjoyTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A7409229D5EB1F0F720B31F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -463,7 +515,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EnjoyTaskTests/Pods-EnjoyTaskTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		65FEDCD706753A1AD47E84EC /* [CP] Check Pods Manifest.lock */ = {
+		6C08187FD9609FBEF7ABEB04 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -519,24 +571,24 @@
 			shellPath = /bin/sh;
 			shellScript = "# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/modules/register-module/RegisterInterfaces.swift\" \\\n\"${INPUT_DIR}/modules/login-module/LoginInterfaces.swift\"\n";
 		};
-		93543F13F31D1D114827AC7E /* [CP] Embed Pods Frameworks */ = {
+		B65B1DCABC5850246E9CF4FD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EnjoyTask/Pods-EnjoyTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-EnjoyTask-EnjoyTaskUITests/Pods-EnjoyTask-EnjoyTaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EnjoyTask/Pods-EnjoyTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-EnjoyTask-EnjoyTaskUITests/Pods-EnjoyTask-EnjoyTaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EnjoyTask/Pods-EnjoyTask-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EnjoyTask-EnjoyTaskUITests/Pods-EnjoyTask-EnjoyTaskUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9DA8AFB038096CCE1636CAF7 /* [CP] Check Pods Manifest.lock */ = {
+		CBC0C74961C6119D76FF468A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -552,28 +604,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-EnjoyTaskTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F7F9C93111402A0A7B8A2C7B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-EnjoyTaskUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -620,6 +650,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92EDE1D1232E80A600B3D94E /* EnjoyTaskUITests.swift in Sources */,
+				929DF7C0233FA3510005562E /* LoginUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -774,7 +805,7 @@
 		};
 		92EDE1D6232E80A600B3D94E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B2E4D5A7FFC33B9F049DB94 /* Pods-EnjoyTask.debug.xcconfig */;
+			baseConfigurationReference = 3C7DFC52220A859244B11FC8 /* Pods-EnjoyTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -795,7 +826,7 @@
 		};
 		92EDE1D7232E80A600B3D94E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71A60CC96F4D6DECFC9CC401 /* Pods-EnjoyTask.release.xcconfig */;
+			baseConfigurationReference = 87BD2DC32F3B19CCA4A12113 /* Pods-EnjoyTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -814,7 +845,7 @@
 		};
 		92EDE1D9232E80A600B3D94E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF99FF88AF182C80D7DD7883 /* Pods-EnjoyTaskTests.debug.xcconfig */;
+			baseConfigurationReference = ADCDE0EC3DAB1D360CFE21F8 /* Pods-EnjoyTaskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -837,7 +868,7 @@
 		};
 		92EDE1DA232E80A600B3D94E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94679F97D390863DB08381D4 /* Pods-EnjoyTaskTests.release.xcconfig */;
+			baseConfigurationReference = BB7847EB3E09F980D12214A8 /* Pods-EnjoyTaskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -860,7 +891,7 @@
 		};
 		92EDE1DC232E80A600B3D94E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 08ED0FB6B057FCE3A225A8FF /* Pods-EnjoyTaskUITests.debug.xcconfig */;
+			baseConfigurationReference = 14472CBB385B6EE829FFDE77 /* Pods-EnjoyTask-EnjoyTaskUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -881,7 +912,7 @@
 		};
 		92EDE1DD232E80A600B3D94E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A78C30A5CB7389CF8520F13B /* Pods-EnjoyTaskUITests.release.xcconfig */;
+			baseConfigurationReference = 6DF7B13B051EE2538598957A /* Pods-EnjoyTask-EnjoyTaskUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -962,7 +993,7 @@
 		};
 		92EDE1FD232F84E700B3D94E /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0920E5196DDBF7371722DC4 /* Pods-EnjoyTask.staging.xcconfig */;
+			baseConfigurationReference = CC4238F7338FE7848E6E8F6C /* Pods-EnjoyTask.staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -982,7 +1013,7 @@
 		};
 		92EDE1FE232F84E700B3D94E /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22E04939F9A3C2DDABFA06A1 /* Pods-EnjoyTaskTests.staging.xcconfig */;
+			baseConfigurationReference = E0A1435834DA3EABF56087E3 /* Pods-EnjoyTaskTests.staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1005,7 +1036,7 @@
 		};
 		92EDE1FF232F84E700B3D94E /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6700367A0DF5E7F1960F2BBC /* Pods-EnjoyTaskUITests.staging.xcconfig */;
+			baseConfigurationReference = 07BF8186AAAFBAFBD802AD00 /* Pods-EnjoyTask-EnjoyTaskUITests.staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

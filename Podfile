@@ -17,7 +17,7 @@ target 'EnjoyTask' do
   end
 
   target 'EnjoyTaskUITests' do
-    inherit! :search_paths
+    inherit! :complete
     # Pods for testing
   end
 
