@@ -27,11 +27,9 @@ class LoginUITests: XCTestCase {
     }
 
     func testTextFieldValues() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
         let app = XCUIApplication()
-        let emailTextField = app.textFields["login_email_text_field"]
-        let passwordTextField = app.textFields["login_password_text_field"]
+        let emailTextField = app.textFields[AccessibilityIdentifiers.Login.emailTextField]
+        let passwordTextField = app.textFields[AccessibilityIdentifiers.Login.passwordTextField]
 
         emailTextField.tap()
         emailTextField.typeText("test@testexam.com")

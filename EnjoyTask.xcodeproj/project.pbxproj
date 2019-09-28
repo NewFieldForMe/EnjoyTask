@@ -15,6 +15,7 @@
 		8EDF6FEB233E058800656702 /* UseCaseInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF6FEA233E058800656702 /* UseCaseInterface.swift */; };
 		9210A0A1233F9CC20086556C /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9210A0A0233F9CC20086556C /* AccessibilityIdentifiers.swift */; };
 		929DF7C0233FA3510005562E /* LoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929DF7BF233FA3510005562E /* LoginUITests.swift */; };
+		929DF7C2233FB1660005562E /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9210A0A0233F9CC20086556C /* AccessibilityIdentifiers.swift */; };
 		92EDE1AF232E80A400B3D94E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE1AE232E80A400B3D94E /* AppDelegate.swift */; };
 		92EDE1B1232E80A400B3D94E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE1B0232E80A400B3D94E /* SceneDelegate.swift */; };
 		92EDE1B6232E80A400B3D94E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92EDE1B4232E80A400B3D94E /* Main.storyboard */; };
@@ -318,7 +319,6 @@
 				E0A1435834DA3EABF56087E3 /* Pods-EnjoyTaskTests.staging.xcconfig */,
 				BB7847EB3E09F980D12214A8 /* Pods-EnjoyTaskTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -649,6 +649,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				929DF7C2233FB1660005562E /* AccessibilityIdentifiers.swift in Sources */,
 				92EDE1D1232E80A600B3D94E /* EnjoyTaskUITests.swift in Sources */,
 				929DF7C0233FA3510005562E /* LoginUITests.swift in Sources */,
 			);
