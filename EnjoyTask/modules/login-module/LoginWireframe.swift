@@ -9,18 +9,33 @@
 import UIKit
 
 class LoginWireframe: LoginWireframeInterface {
-    func createModule() -> LoginViewController {
-        // Todo: setup presenter
-        return viewController
+    private unowned let viewController: UIViewController
+
+    private init(viewController: UIViewController) {
+        self.viewController = viewController
+    }
+
+    static func createModule() -> UIViewController {
+        let vc = buildViewController()
+        let wireframe = LoginWireframe(viewController: vc)
+        let presenter = LoginPresenter(view: vc, wireframe: wireframe)
+        vc.presenter = presenter
+        return vc
+    }
+
+    func showRegiserViewController() {
+        let registerVC = RegisterWireframe.createModule()
+        registerVC.modalPresentationStyle = .fullScreen
+        viewController.present(registerVC, animated: true, completion: nil)
     }
 }
 
 private extension LoginWireframe {
-    var viewController: LoginViewController {
+    static func buildViewController() -> LoginViewController {
         return self.mainstoryboard.instantiateViewController(identifier: "loginViewController") as! LoginViewController
     }
 
-    var mainstoryboard: UIStoryboard {
+    static var mainstoryboard: UIStoryboard {
         return UIStoryboard(name: "Main", bundle: Bundle.main)
     }
 }

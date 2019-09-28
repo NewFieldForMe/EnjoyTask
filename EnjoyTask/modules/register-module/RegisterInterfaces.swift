@@ -17,3 +17,5 @@ protocol RegisterViewInterface: class {
 protocol RegisterPresenterInterface: class {
     func didSelectRegisterAction(email: String?, password: String?)
 }
+
+protocol RegisterWireframeInterface: class { }

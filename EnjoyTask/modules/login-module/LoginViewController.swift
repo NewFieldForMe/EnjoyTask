@@ -9,6 +9,8 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    var presenter: LoginPresenterInterface!
+
     @IBOutlet weak var emailTextField: UITextField! {
         didSet {
             emailTextField.accessibilityIdentifier = AccessibilityIdentifiers.Login.emailTextField
@@ -23,6 +25,10 @@ class LoginViewController: UIViewController {
         }
     }
 
+    @IBAction func tapMoveToRegisterButton(_ sender: UIButton) {
+        presenter.didSelectMoveToRegisterAction()
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(
@@ -31,6 +37,24 @@ class LoginViewController: UIViewController {
         )
 
         view.addGestureRecognizer(tap)
+    }
+}
+
+extension LoginViewController: LoginViewInterface {
+    func showLoadScreen() {
+        // Todo: implementation
+    }
+
+    func hideLoadScreen() {
+        // Todo: implementation
+    }
+
+    func showEmptyError() {
+        // Todo: implementation
+    }
+
+    func showLoginError() {
+        // Todo: implementation
     }
 }
 

@@ -132,13 +132,19 @@
                                 <rect key="frame" x="0.0" y="805" width="414" height="91"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新規会員登録はこちら" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZf-7b-HLV">
-                                <rect key="frame" x="122" y="821" width="170" height="23.5"/>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新規会員登録はこちら" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZf-7b-HLV">
+                                <rect key="frame" x="122" y="821" width="170" height="30"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ax-tm-0tn">
+                                <rect key="frame" x="122" y="821" width="170" height="30"/>
+                                <connections>
+                                    <action selector="tapMoveToRegisterButton:" destination="Amk-jr-FEZ" eventType="touchUpInside" id="DI6-b7-BZ8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -146,6 +152,8 @@
                             <constraint firstItem="C16-EN-hmr" firstAttribute="top" secondItem="uaw-lp-FJa" secondAttribute="top" id="88U-8n-nvV"/>
                             <constraint firstItem="fHV-jx-t59" firstAttribute="top" secondItem="uaw-lp-FJa" secondAttribute="bottom" constant="-57" id="8Wz-Rc-2QU"/>
                             <constraint firstAttribute="bottom" secondItem="rQd-fb-1S5" secondAttribute="bottom" id="9gs-d8-cV5"/>
+                            <constraint firstItem="7ax-tm-0tn" firstAttribute="trailing" secondItem="eZf-7b-HLV" secondAttribute="trailing" id="AR2-0Q-JjH"/>
+                            <constraint firstItem="7ax-tm-0tn" firstAttribute="bottom" secondItem="eZf-7b-HLV" secondAttribute="bottom" id="Bw0-e4-zDO"/>
                             <constraint firstItem="uaw-lp-FJa" firstAttribute="bottom" secondItem="cAy-mf-QYQ" secondAttribute="bottom" id="DYd-fY-8SJ"/>
                             <constraint firstItem="C16-EN-hmr" firstAttribute="leading" secondItem="uaw-lp-FJa" secondAttribute="leading" id="FJl-wk-hQI"/>
                             <constraint firstItem="uaw-lp-FJa" firstAttribute="trailing" secondItem="cAy-mf-QYQ" secondAttribute="trailing" id="MUJ-sc-NJv"/>
@@ -157,9 +165,11 @@
                             <constraint firstItem="fHV-jx-t59" firstAttribute="leading" secondItem="uaw-lp-FJa" secondAttribute="leading" id="cFQ-NL-bng"/>
                             <constraint firstItem="fHV-jx-t59" firstAttribute="top" secondItem="WsG-Ib-tmq" secondAttribute="bottom" constant="16" id="cwc-5N-7fI"/>
                             <constraint firstItem="eZf-7b-HLV" firstAttribute="centerX" secondItem="fHV-jx-t59" secondAttribute="centerX" id="eJ0-Tt-AbN"/>
+                            <constraint firstItem="7ax-tm-0tn" firstAttribute="top" secondItem="eZf-7b-HLV" secondAttribute="top" id="me0-xf-xIZ"/>
                             <constraint firstAttribute="bottom" secondItem="fHV-jx-t59" secondAttribute="bottom" id="n0j-us-dQh"/>
                             <constraint firstItem="uaw-lp-FJa" firstAttribute="bottom" secondItem="C16-EN-hmr" secondAttribute="bottom" id="nEr-Zn-a86"/>
                             <constraint firstItem="uaw-lp-FJa" firstAttribute="trailing" secondItem="C16-EN-hmr" secondAttribute="trailing" id="nTH-2u-4Uj"/>
+                            <constraint firstItem="7ax-tm-0tn" firstAttribute="leading" secondItem="eZf-7b-HLV" secondAttribute="leading" id="uJ0-Xp-4bQ"/>
                             <constraint firstItem="uaw-lp-FJa" firstAttribute="trailing" secondItem="rQd-fb-1S5" secondAttribute="trailing" id="uXf-Wp-E7a"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uaw-lp-FJa"/>

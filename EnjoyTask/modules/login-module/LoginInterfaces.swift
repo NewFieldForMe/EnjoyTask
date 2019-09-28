@@ -17,8 +17,9 @@ protocol LoginViewInterface: class {
 
 protocol LoginPresenterInterface: class {
     func didSelectLoginAction(email: String?, password: String?)
+    func didSelectMoveToRegisterAction()
 }
 
 protocol LoginWireframeInterface: class {
-    func createModule() -> LoginViewController
+    func showRegiserViewController()
 }
