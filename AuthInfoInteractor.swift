@@ -10,6 +10,6 @@ import Foundation
 
 struct AuthInfoInteractor: AuthInfoUseCase {
     func validate(emailAddress: String?, password: String?, onSuccess: @escaping (_ authInfo: AuthInfoEntity) -> (), onError: @escaping () -> ()) {
-        
+        // Todo: implementation
     }
 }
