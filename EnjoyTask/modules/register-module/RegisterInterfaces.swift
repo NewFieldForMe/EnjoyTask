@@ -16,6 +16,9 @@ protocol RegisterViewInterface: class {
 
 protocol RegisterPresenterInterface: class {
     func didSelectRegisterAction(email: String?, password: String?)
+    func didSelectBackToLoginAction()
 }
 
-protocol RegisterWireframeInterface: class { }
+protocol RegisterWireframeInterface: class {
+    func dismissBackToLogin()
+}

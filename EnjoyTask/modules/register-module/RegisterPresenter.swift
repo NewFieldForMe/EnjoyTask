@@ -10,9 +10,11 @@ import Foundation
 
 class RegisterPresenter: RegisterPresenterInterface {
     weak var view: RegisterViewInterface!
+    let wireframe: RegisterWireframeInterface
 
-    init(view: RegisterViewInterface) {
+    init(view: RegisterViewInterface, wireframe: RegisterWireframeInterface) {
         self.view = view
+        self.wireframe = wireframe
     }
 
     func didSelectRegisterAction(email: String?, password: String?) {
@@ -20,6 +22,10 @@ class RegisterPresenter: RegisterPresenterInterface {
             view.showValidationError()
             return
         }
+    }
+
+    func didSelectBackToLoginAction() {
+        wireframe.dismissBackToLogin()
     }
 }
 

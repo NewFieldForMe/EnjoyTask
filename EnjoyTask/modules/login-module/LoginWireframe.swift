@@ -26,6 +26,7 @@ class LoginWireframe: LoginWireframeInterface {
     func showRegiserViewController() {
         let registerVC = RegisterWireframe.createModule()
         registerVC.modalPresentationStyle = .fullScreen
+        registerVC.modalTransitionStyle = .flipHorizontal
         viewController.present(registerVC, animated: true, completion: nil)
     }
 }

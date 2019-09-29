@@ -9,14 +9,27 @@
 import UIKit
 
 class RegisterWireframe: RegisterWireframeInterface {
+    private unowned let viewController: UIViewController
+
+    private init(viewController: UIViewController) {
+        self.viewController = viewController
+    }
+
     static func createModule() -> UIViewController {
-        // Todo: setup presenter
-        return viewController
+        let vc = buildViewController()
+        let wireframe = RegisterWireframe(viewController: vc)
+        let presenter = RegisterPresenter(view: vc, wireframe: wireframe)
+        vc.presenter = presenter
+        return vc
+    }
+
+    func dismissBackToLogin() {
+        viewController.dismiss(animated: true, completion: nil)
     }
 }
 
 private extension RegisterWireframe {
-    static var viewController: RegisterViewController {
+    static func buildViewController() -> RegisterViewController {
         return self.mainstoryboard.instantiateViewController(identifier: "registerViewController") as! RegisterViewController
     }
 

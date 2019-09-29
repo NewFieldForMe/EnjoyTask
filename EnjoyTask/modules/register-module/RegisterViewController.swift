@@ -9,6 +9,11 @@
 import UIKit
 
 class RegisterViewController: UIViewController {
+    var presenter: RegisterPresenterInterface!
+
+    @IBAction func tapBackButton(_ sender: UIButton) {
+        presenter.didSelectBackToLoginAction()
+    }
 }
 
 extension RegisterViewController: RegisterViewInterface {
