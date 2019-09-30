@@ -1,5 +1,5 @@
 //
-//  AuthInfoInteractor.swift
+//  AuthInteractor.swift
 //  EnjoyTask
 //
 //  Created by yamada.ryo on 2019/09/27.
@@ -9,8 +9,8 @@
 import Foundation
 import FirebaseAuth
 
-struct AuthInfoInteractor: AuthInfoUseCase {
-    func validate(emailAddress: String?, password: String?, onSuccess: @escaping (_ authInfo: AuthInfoEntity) -> (), onError: @escaping () -> ()) {
+struct AuthInteractor: AuthUseCase {
+    func validate(emailAddress: String?, password: String?, onSuccess: @escaping () -> (), onError: @escaping () -> ()) {
         // Todo: implementation
     }
 

@@ -14,7 +14,6 @@
 		8E59FA8F2341ED0400299CA3 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E59FA8E2341ED0400299CA3 /* TaskListViewController.swift */; };
 		8E59FA912341ED1600299CA3 /* TaskListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E59FA902341ED1600299CA3 /* TaskListPresenter.swift */; };
 		8E59FA932341ED2100299CA3 /* TaskListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E59FA922341ED2100299CA3 /* TaskListWireframe.swift */; };
-		8EDF6FE7233E048200656702 /* AuthInfoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF6FE6233E048200656702 /* AuthInfoEntity.swift */; };
 		8EDF6FE9233E055C00656702 /* AuthInfoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF6FE8233E055C00656702 /* AuthInfoInteractor.swift */; };
 		8EDF6FEB233E058800656702 /* UseCaseInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF6FEA233E058800656702 /* UseCaseInterface.swift */; };
 		9210A0A1233F9CC20086556C /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9210A0A0233F9CC20086556C /* AccessibilityIdentifiers.swift */; };
@@ -71,7 +70,6 @@
 		8E59FA8E2341ED0400299CA3 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
 		8E59FA902341ED1600299CA3 /* TaskListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListPresenter.swift; sourceTree = "<group>"; };
 		8E59FA922341ED2100299CA3 /* TaskListWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListWireframe.swift; sourceTree = "<group>"; };
-		8EDF6FE6233E048200656702 /* AuthInfoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInfoEntity.swift; sourceTree = SOURCE_ROOT; };
 		8EDF6FE8233E055C00656702 /* AuthInfoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInfoInteractor.swift; sourceTree = SOURCE_ROOT; };
 		8EDF6FEA233E058800656702 /* UseCaseInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseInterface.swift; sourceTree = SOURCE_ROOT; };
 		9210A0A0233F9CC20086556C /* AccessibilityIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityIdentifiers.swift; sourceTree = "<group>"; };
@@ -287,7 +285,6 @@
 		92EDE1EC232F5F8F00B3D94E /* entity */ = {
 			isa = PBXGroup;
 			children = (
-				8EDF6FE6233E048200656702 /* AuthInfoEntity.swift */,
 			);
 			path = entity;
 			sourceTree = "<group>";
@@ -639,7 +636,6 @@
 			files = (
 				92EDE20F232FBF1C00B3D94E /* LoginWireframe.swift in Sources */,
 				92EDE20B232FBF0300B3D94E /* LoginViewController.swift in Sources */,
-				8EDF6FE7233E048200656702 /* AuthInfoEntity.swift in Sources */,
 				92EDE1F2232F60BA00B3D94E /* RegisterPresenter.swift in Sources */,
 				92EDE212232FBFF100B3D94E /* RootRouter.swift in Sources */,
 				92EDE1AF232E80A400B3D94E /* AppDelegate.swift in Sources */,

@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol AuthInfoUseCase {
-    func validate(emailAddress: String?, password: String?, onSuccess: @escaping (_ authInfo: AuthInfoEntity) -> (), onError: @escaping () -> ())
+protocol AuthUseCase {
+    func validate(emailAddress: String?, password: String?, onSuccess: @escaping () -> (), onError: @escaping () -> ())
     func createUser(emailAddress: String?, password: String?, onSuccess: @escaping() -> (), onError: @escaping() -> ())
 }

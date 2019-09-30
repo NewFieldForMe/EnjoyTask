@@ -11,12 +11,12 @@ import Foundation
 class RegisterPresenter: RegisterPresenterInterface {
     weak var view: RegisterViewInterface!
     let wireframe: RegisterWireframeInterface
-    let authInfoUseCase: AuthInfoUseCase
+    let authUseCase: AuthUseCase
 
-    init(view: RegisterViewInterface, wireframe: RegisterWireframeInterface, authInfoUseCase: AuthInfoUseCase) {
+    init(view: RegisterViewInterface, wireframe: RegisterWireframeInterface, authUseCase: AuthUseCase) {
         self.view = view
         self.wireframe = wireframe
-        self.authInfoUseCase = authInfoUseCase
+        self.authUseCase = authUseCase
     }
 
     func didSelectRegisterAction(email: String?, password: String?) {
@@ -24,7 +24,7 @@ class RegisterPresenter: RegisterPresenterInterface {
             view.showValidationError()
             return
         }
-        authInfoUseCase.createUser(emailAddress: email, password: password, onSuccess: { }, onError: {
+        authUseCase.createUser(emailAddress: email, password: password, onSuccess: { }, onError: {
 
         })
     }
