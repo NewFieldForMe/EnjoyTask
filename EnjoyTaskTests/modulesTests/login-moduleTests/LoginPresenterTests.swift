@@ -17,13 +17,15 @@ class LoginPresenterTests: XCTestCase {
     // System under test
     var sut: LoginPresenter!
     var mockView: MockLoginViewInterface!
+    var mockWireframe: MockLoginWireframeInterface!
 
     override func setUp() {
         mockView = MockLoginViewInterface()
+        mockWireframe = MockLoginWireframeInterface()
         stub(mockView) { stub in
             when(stub.showEmptyError()).thenDoNothing()
         }
-        sut = LoginPresenter(view: mockView)
+        sut = LoginPresenter(view: mockView, wireframe: mockWireframe)
     }
 
     override func tearDown() {

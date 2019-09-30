@@ -18,13 +18,20 @@ class RegsiterPresenterTests: XCTestCase {
     // System under test
     var sut: RegisterPresenter!
     var mockView: MockRegisterViewInterface!
+    var mockWireframe: MockRegisterWireframeInterface!
+    var mockAuthUseCase: MockAuthUseCase!
 
     override func setUp() {
         mockView = MockRegisterViewInterface()
+        mockWireframe = MockRegisterWireframeInterface()
+        mockAuthUseCase = MockAuthUseCase()
         stub(mockView) { stub in
             when(stub.showValidationError()).thenDoNothing()
         }
-        sut = RegisterPresenter(view: mockView)
+        stub(mockAuthUseCase) { stub in
+            when(stub.createUser(emailAddress: any(), password: any(), onSuccess: any(), onError: any())).thenDoNothing()
+        }
+        sut = RegisterPresenter(view: mockView, wireframe: mockWireframe, authUseCase: mockAuthUseCase)
     }
 
     override func tearDown() {
