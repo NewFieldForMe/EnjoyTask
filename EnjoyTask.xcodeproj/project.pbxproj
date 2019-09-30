@@ -10,6 +10,10 @@
 		4EDDE27430B87775AFBF6900 /* Pods_EnjoyTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C284C4F7141A1ADEEF38B1A0 /* Pods_EnjoyTaskTests.framework */; };
 		59D953951557A72FAF2B592F /* Pods_EnjoyTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6573E63806676D55D2A50E /* Pods_EnjoyTask.framework */; };
 		5D39894038D899AAA76947E2 /* Pods_EnjoyTask_EnjoyTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2285E0969D44EE849F1BA09F /* Pods_EnjoyTask_EnjoyTaskUITests.framework */; };
+		8E59FA8D2341ECA200299CA3 /* TaskListInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E59FA8C2341ECA200299CA3 /* TaskListInterfaces.swift */; };
+		8E59FA8F2341ED0400299CA3 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E59FA8E2341ED0400299CA3 /* TaskListViewController.swift */; };
+		8E59FA912341ED1600299CA3 /* TaskListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E59FA902341ED1600299CA3 /* TaskListPresenter.swift */; };
+		8E59FA932341ED2100299CA3 /* TaskListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E59FA922341ED2100299CA3 /* TaskListWireframe.swift */; };
 		8EDF6FE7233E048200656702 /* AuthInfoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF6FE6233E048200656702 /* AuthInfoEntity.swift */; };
 		8EDF6FE9233E055C00656702 /* AuthInfoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF6FE8233E055C00656702 /* AuthInfoInteractor.swift */; };
 		8EDF6FEB233E058800656702 /* UseCaseInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF6FEA233E058800656702 /* UseCaseInterface.swift */; };
@@ -63,6 +67,10 @@
 		3C7DFC52220A859244B11FC8 /* Pods-EnjoyTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTask.debug.xcconfig"; path = "Target Support Files/Pods-EnjoyTask/Pods-EnjoyTask.debug.xcconfig"; sourceTree = "<group>"; };
 		6DF7B13B051EE2538598957A /* Pods-EnjoyTask-EnjoyTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTask-EnjoyTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-EnjoyTask-EnjoyTaskUITests/Pods-EnjoyTask-EnjoyTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
 		87BD2DC32F3B19CCA4A12113 /* Pods-EnjoyTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTask.release.xcconfig"; path = "Target Support Files/Pods-EnjoyTask/Pods-EnjoyTask.release.xcconfig"; sourceTree = "<group>"; };
+		8E59FA8C2341ECA200299CA3 /* TaskListInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListInterfaces.swift; sourceTree = "<group>"; };
+		8E59FA8E2341ED0400299CA3 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		8E59FA902341ED1600299CA3 /* TaskListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListPresenter.swift; sourceTree = "<group>"; };
+		8E59FA922341ED2100299CA3 /* TaskListWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListWireframe.swift; sourceTree = "<group>"; };
 		8EDF6FE6233E048200656702 /* AuthInfoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInfoEntity.swift; sourceTree = SOURCE_ROOT; };
 		8EDF6FE8233E055C00656702 /* AuthInfoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInfoInteractor.swift; sourceTree = SOURCE_ROOT; };
 		8EDF6FEA233E058800656702 /* UseCaseInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseInterface.swift; sourceTree = SOURCE_ROOT; };
@@ -139,6 +147,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8E59FA8B2341E79A00299CA3 /* tasklist-module */ = {
+			isa = PBXGroup;
+			children = (
+				8E59FA8C2341ECA200299CA3 /* TaskListInterfaces.swift */,
+				8E59FA8E2341ED0400299CA3 /* TaskListViewController.swift */,
+				8E59FA902341ED1600299CA3 /* TaskListPresenter.swift */,
+				8E59FA922341ED2100299CA3 /* TaskListWireframe.swift */,
+			);
+			path = "tasklist-module";
+			sourceTree = "<group>";
+		};
 		929DF7BC233FA2EF0005562E /* modulesTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +228,7 @@
 		92EDE1E4232EA20400B3D94E /* modules */ = {
 			isa = PBXGroup;
 			children = (
+				8E59FA8B2341E79A00299CA3 /* tasklist-module */,
 				92EDE1E9232F5F1300B3D94E /* register-module */,
 				92EDE1E5232EA23A00B3D94E /* login-module */,
 			);
@@ -623,14 +643,18 @@
 				92EDE1F2232F60BA00B3D94E /* RegisterPresenter.swift in Sources */,
 				92EDE212232FBFF100B3D94E /* RootRouter.swift in Sources */,
 				92EDE1AF232E80A400B3D94E /* AppDelegate.swift in Sources */,
+				8E59FA8D2341ECA200299CA3 /* TaskListInterfaces.swift in Sources */,
 				92EDE20D232FBF1100B3D94E /* LoginPresenter.swift in Sources */,
 				8EDF6FEB233E058800656702 /* UseCaseInterface.swift in Sources */,
 				92EDE1B1232E80A400B3D94E /* SceneDelegate.swift in Sources */,
 				92EDE1F0232F609900B3D94E /* RegisterInterfaces.swift in Sources */,
+				8E59FA912341ED1600299CA3 /* TaskListPresenter.swift in Sources */,
+				8E59FA932341ED2100299CA3 /* TaskListWireframe.swift in Sources */,
 				92EDE209232FBEF700B3D94E /* LoginInterfaces.swift in Sources */,
 				92EDE1F4232F60C900B3D94E /* RegisterWireframe.swift in Sources */,
 				9210A0A1233F9CC20086556C /* AccessibilityIdentifiers.swift in Sources */,
 				92EDE1EE232F607100B3D94E /* RegisterViewController.swift in Sources */,
+				8E59FA8F2341ED0400299CA3 /* TaskListViewController.swift in Sources */,
 				8EDF6FE9233E055C00656702 /* AuthInfoInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
