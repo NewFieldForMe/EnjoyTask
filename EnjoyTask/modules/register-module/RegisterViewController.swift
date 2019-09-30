@@ -25,6 +25,10 @@ class RegisterViewController: UIViewController {
         }
     }
 
+    @IBAction func tapRegisterButton(_ sender: UIButton) {
+        presenter.didSelectRegisterAction(email: emailTextField.text, password: passwordTextField.text)
+    }
+
     @IBAction func tapBackButton(_ sender: UIButton) {
         presenter.didSelectBackToLoginAction()
     }

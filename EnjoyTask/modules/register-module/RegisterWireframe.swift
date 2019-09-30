@@ -18,7 +18,8 @@ class RegisterWireframe: RegisterWireframeInterface {
     static func createModule() -> UIViewController {
         let vc = buildViewController()
         let wireframe = RegisterWireframe(viewController: vc)
-        let presenter = RegisterPresenter(view: vc, wireframe: wireframe)
+        let authInfoUseCase = AuthInfoInteractor()
+        let presenter = RegisterPresenter(view: vc, wireframe: wireframe, authInfoUseCase: authInfoUseCase)
         vc.presenter = presenter
         return vc
     }

@@ -7,9 +7,23 @@
 //
 
 import Foundation
+import FirebaseAuth
 
 struct AuthInfoInteractor: AuthInfoUseCase {
     func validate(emailAddress: String?, password: String?, onSuccess: @escaping (_ authInfo: AuthInfoEntity) -> (), onError: @escaping () -> ()) {
         // Todo: implementation
+    }
+
+    func createUser(emailAddress: String?, password: String?, onSuccess: @escaping () -> (), onError: @escaping () -> ()) {
+        guard let emailAddress = emailAddress, let password = password else { return }
+        Auth.auth().createUser(withEmail: emailAddress, password: password) { (result, error) in
+            if let error = error {
+                let authError = AuthErrorCode.init(rawValue: error._code)
+                print(authError)
+                onError()
+                return
+            }
+            onSuccess()
+        }
     }
 }
