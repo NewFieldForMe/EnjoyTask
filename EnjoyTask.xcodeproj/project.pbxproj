@@ -872,7 +872,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ADCDE0EC3DAB1D360CFE21F8 /* Pods-EnjoyTaskTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B7ECV6NH3D;
@@ -895,7 +895,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BB7847EB3E09F980D12214A8 /* Pods-EnjoyTaskTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B7ECV6NH3D;
@@ -918,7 +918,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14472CBB385B6EE829FFDE77 /* Pods-EnjoyTask-EnjoyTaskUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B7ECV6NH3D;
 				INFOPLIST_FILE = EnjoyTaskUITests/Info.plist;
@@ -939,7 +939,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6DF7B13B051EE2538598957A /* Pods-EnjoyTask-EnjoyTaskUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B7ECV6NH3D;
 				INFOPLIST_FILE = EnjoyTaskUITests/Info.plist;
@@ -1040,7 +1040,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E0A1435834DA3EABF56087E3 /* Pods-EnjoyTaskTests.staging.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B7ECV6NH3D;
@@ -1063,7 +1063,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 07BF8186AAAFBAFBD802AD00 /* Pods-EnjoyTask-EnjoyTaskUITests.staging.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B7ECV6NH3D;
 				INFOPLIST_FILE = EnjoyTaskUITests/Info.plist;
