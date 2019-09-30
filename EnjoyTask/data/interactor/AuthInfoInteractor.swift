@@ -10,16 +10,15 @@ import Foundation
 import FirebaseAuth
 
 struct AuthInteractor: AuthUseCase {
-    func validate(emailAddress: String?, password: String?, onSuccess: @escaping () -> (), onError: @escaping () -> ()) {
+    func validate(emailAddress: String?, password: String?, onSuccess: @escaping () -> Void, onError: @escaping () -> Void) {
         // Todo: implementation
     }
 
-    func createUser(emailAddress: String?, password: String?, onSuccess: @escaping () -> (), onError: @escaping () -> ()) {
+    func createUser(emailAddress: String?, password: String?, onSuccess: @escaping () -> Void, onError: @escaping () -> Void) {
         guard let emailAddress = emailAddress, let password = password else { return }
-        Auth.auth().createUser(withEmail: emailAddress, password: password) { (result, error) in
+        Auth.auth().createUser(withEmail: emailAddress, password: password) { (_, error) in
             if let error = error {
-                let authError = AuthErrorCode.init(rawValue: error._code)
-                print(authError)
+                _ = AuthErrorCode.init(rawValue: error._code)
                 onError()
                 return
             }

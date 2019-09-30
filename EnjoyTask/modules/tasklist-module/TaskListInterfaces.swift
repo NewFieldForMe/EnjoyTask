@@ -8,6 +8,4 @@
 
 import Foundation
 
-protocol TaskListWireframeInterface: class {
-    
-}
+protocol TaskListWireframeInterface: class { }
