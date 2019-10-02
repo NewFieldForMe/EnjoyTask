@@ -29,15 +29,16 @@ class LoginUITests: XCTestCase {
     func testTextFieldValues() {
         let app = XCUIApplication()
         let emailTextField = app.textFields[AccessibilityIdentifiers.Login.emailTextField]
-//        let passwordTextField = app.textFields[AccessibilityIdentifiers.Login.passwordTextField]
+        let passwordTextField = app.secureTextFields[AccessibilityIdentifiers.Login.passwordTextField]
 
         emailTextField.tap()
         emailTextField.typeText("test@testexam.com")
-//        passwordTextField.tap()
-//        passwordTextField.typeText("test")
+
+        passwordTextField.tap()
+        passwordTextField.typeText("test")
 
         XCTAssertEqual(emailTextField.value as? String, "test@testexam.com")
-//        XCTAssertEqual(passwordTextField.value as? String, "test")
+        XCTAssertNotNil(passwordTextField.value as? String)
     }
 
 }
