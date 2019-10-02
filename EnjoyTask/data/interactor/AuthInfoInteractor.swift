@@ -25,4 +25,16 @@ struct AuthInteractor: AuthUseCase {
             onSuccess()
         }
     }
+
+    func login(emailAddress: String?, password: String?, onSuccess: @escaping () -> Void, onError: @escaping () -> Void) {
+        guard let emailAddress = emailAddress, let password = password else { return }
+        Auth.auth().signIn(withEmail: emailAddress, password: password) { (_, error) in
+            if let error = error {
+                _ = AuthErrorCode.init(rawValue: error._code)
+                onError()
+                return
+            }
+            onSuccess()
+        }
+    }
 }

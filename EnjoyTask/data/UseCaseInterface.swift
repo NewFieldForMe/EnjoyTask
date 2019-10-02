@@ -11,4 +11,5 @@ import Foundation
 protocol AuthUseCase {
     func validate(emailAddress: String?, password: String?, onSuccess: @escaping () -> Void, onError: @escaping () -> Void)
     func createUser(emailAddress: String?, password: String?, onSuccess: @escaping() -> Void, onError: @escaping() -> Void)
+    func login(emailAddress: String?, password: String?, onSuccess: @escaping() -> Void, onError: @escaping() -> Void)
 }

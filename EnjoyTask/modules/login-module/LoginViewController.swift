@@ -25,6 +25,10 @@ class LoginViewController: UIViewController {
         }
     }
 
+    @IBAction func tapLoginButton(_ sender: UIButton) {
+        presenter.didSelectLoginAction(email: emailTextField.text, password: passwordTextField.text)
+    }
+
     @IBAction func tapMoveToRegisterButton(_ sender: UIButton) {
         presenter.didSelectMoveToRegisterAction()
     }

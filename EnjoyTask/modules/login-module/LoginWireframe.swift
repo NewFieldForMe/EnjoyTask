@@ -18,7 +18,8 @@ class LoginWireframe: LoginWireframeInterface {
     static func createModule() -> UIViewController {
         let vc = buildViewController()
         let wireframe = LoginWireframe(viewController: vc)
-        let presenter = LoginPresenter(view: vc, wireframe: wireframe)
+        let authUseCase = AuthInteractor()
+        let presenter = LoginPresenter(view: vc, wireframe: wireframe, authUseCase: authUseCase)
         vc.presenter = presenter
         return vc
     }

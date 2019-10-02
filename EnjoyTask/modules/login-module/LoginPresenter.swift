@@ -11,10 +11,12 @@ import Foundation
 class LoginPresenter: LoginPresenterInterface {
     weak var view: LoginViewInterface!
     let wireframe: LoginWireframeInterface
+    let authUseCase: AuthUseCase
 
-    init(view: LoginViewInterface, wireframe: LoginWireframeInterface) {
+    init(view: LoginViewInterface, wireframe: LoginWireframeInterface, authUseCase: AuthUseCase) {
         self.view = view
         self.wireframe = wireframe
+        self.authUseCase = authUseCase
     }
 
     func didSelectLoginAction(email: String?, password: String?) {
@@ -22,6 +24,9 @@ class LoginPresenter: LoginPresenterInterface {
             view.showEmptyError()
             return
         }
+        authUseCase.login(emailAddress: email, password: password, onSuccess: { }, onError: {
+
+        })
     }
 
     func didSelectMoveToRegisterAction() {
