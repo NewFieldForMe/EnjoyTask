@@ -13,6 +13,7 @@ protocol LoginViewInterface: class {
     func hideLoadScreen()
     func showEmptyError()
     func showLoginError()
+    func showNetworkError()
 }
 
 protocol LoginPresenterInterface: class {

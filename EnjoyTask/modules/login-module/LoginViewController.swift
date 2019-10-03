@@ -45,6 +45,10 @@ class LoginViewController: UIViewController {
 }
 
 extension LoginViewController: LoginViewInterface {
+    func showNetworkError() {
+        // Todo: implementation
+    }
+
     func showLoadScreen() {
         // Todo: implementation
     }

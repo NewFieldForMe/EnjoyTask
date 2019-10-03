@@ -20,14 +20,20 @@ class LoginPresenter: LoginPresenterInterface {
     }
 
     func didSelectLoginAction(email: String?, password: String?) {
-        guard email != nil, password != nil else {
+        guard let email = email, let password = password, !email.isEmpty && !password.isEmpty else {
             view.showEmptyError()
             return
         }
+
         authUseCase.login(emailAddress: email, password: password, onSuccess: { [weak self] in
             self?.wireframe.showTaskListViewController()
-        }, onError: {
-
+        }, onError: { [weak self] error in
+            switch error {
+            case .networkError:
+                self?.view.showNetworkError()
+            default:
+                self?.view.showLoginError()
+            }
         })
     }
 
