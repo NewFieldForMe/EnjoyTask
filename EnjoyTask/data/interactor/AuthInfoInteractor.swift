@@ -30,7 +30,8 @@ struct AuthInteractor: AuthUseCase {
         guard let emailAddress = emailAddress, let password = password else { return }
         Auth.auth().signIn(withEmail: emailAddress, password: password) { (_, error) in
             if let error = error {
-                _ = AuthErrorCode.init(rawValue: error._code)
+                let errorCode = AuthErrorCode.init(rawValue: error._code)
+                print(errorCode)
                 onError()
                 return
             }

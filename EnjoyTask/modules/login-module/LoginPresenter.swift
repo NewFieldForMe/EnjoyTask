@@ -24,7 +24,9 @@ class LoginPresenter: LoginPresenterInterface {
             view.showEmptyError()
             return
         }
-        authUseCase.login(emailAddress: email, password: password, onSuccess: { }, onError: {
+        authUseCase.login(emailAddress: email, password: password, onSuccess: { [weak self] in
+            self?.wireframe.showTaskListViewController()
+        }, onError: {
 
         })
     }

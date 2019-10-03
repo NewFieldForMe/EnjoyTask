@@ -22,4 +22,5 @@ protocol LoginPresenterInterface: class {
 
 protocol LoginWireframeInterface: class {
     func showRegiserViewController()
+    func showTaskListViewController()
 }

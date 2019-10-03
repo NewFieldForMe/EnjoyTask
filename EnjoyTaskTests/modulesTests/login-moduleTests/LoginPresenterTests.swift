@@ -30,6 +30,10 @@ class LoginPresenterTests: XCTestCase {
         stub(mockAuthUseCase) { stub in
             when(stub.login(emailAddress: any(), password: any(), onSuccess: any(), onError: any())).thenDoNothing()
         }
+        stub(mockWireframe) { stub in
+            when(stub.showTaskListViewController()).thenDoNothing()
+            when(stub.showRegiserViewController()).thenDoNothing()
+        }
         sut = LoginPresenter(view: mockView, wireframe: mockWireframe, authUseCase: mockAuthUseCase)
     }
 
@@ -55,6 +59,13 @@ class LoginPresenterTests: XCTestCase {
     func testDidSelectLoginAction_withNotEmptyEmailAddress_And_Password() {
         sut.didSelectLoginAction(email: "email", password: "password")
         verify(mockView, times(0)).showEmptyError()
+    }
+
+    /// 新規会員登録画面への遷移アクション
+    ///   - 遷移が実行される
+    func testDidSelectMoveToRegisterAction() {
+        sut.didSelectMoveToRegisterAction()
+        verify(mockWireframe, times(1)).showRegiserViewController()
     }
 
     func testPerformanceExample() {
