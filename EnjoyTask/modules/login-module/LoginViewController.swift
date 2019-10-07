@@ -46,10 +46,7 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController: LoginViewInterface {
     func showNetworkError() {
-        let alert = UIAlertController(title: "エラー", message: "通信環境の良いところでもう一度お試しください。", preferredStyle: UIAlertController.Style.alert)
-        let defaultAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
-        alert.addAction(defaultAction)
-        present(alert, animated: true, completion: nil)
+        present(DialogWireframe.createNetworkErrorDialog(), animated: true, completion: nil)
     }
 
     func showLoadScreen() {
@@ -61,17 +58,11 @@ extension LoginViewController: LoginViewInterface {
     }
 
     func showEmptyError() {
-        let alert = UIAlertController(title: "エラー", message: "メールアドレスとパスワードを正しく入力してください。", preferredStyle: UIAlertController.Style.alert)
-        let defaultAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
-        alert.addAction(defaultAction)
-        present(alert, animated: true, completion: nil)
+        present(DialogWireframe.createEmptyAuthInfoErrorDialog(), animated: true, completion: nil)
     }
 
     func showLoginError() {
-        let alert = UIAlertController(title: "エラー", message: "ログインに失敗しました。メールアドレスとパスワードを見直して、もう一度お試しください。", preferredStyle: UIAlertController.Style.alert)
-        let defaultAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
-        alert.addAction(defaultAction)
-        present(alert, animated: true, completion: nil)
+        present(DialogWireframe.createLoginErrorDialog(), animated: true, completion: nil)
     }
 }
 

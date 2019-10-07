@@ -14,6 +14,7 @@
 		8E59FA8F2341ED0400299CA3 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E59FA8E2341ED0400299CA3 /* TaskListViewController.swift */; };
 		8E59FA912341ED1600299CA3 /* TaskListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E59FA902341ED1600299CA3 /* TaskListPresenter.swift */; };
 		8E59FA932341ED2100299CA3 /* TaskListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E59FA922341ED2100299CA3 /* TaskListWireframe.swift */; };
+		8EB96565234B3EF9000DFD8F /* DialogWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB96564234B3EF9000DFD8F /* DialogWireframe.swift */; };
 		8EDF6FE9233E055C00656702 /* AuthInfoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF6FE8233E055C00656702 /* AuthInfoInteractor.swift */; };
 		8EDF6FEB233E058800656702 /* UseCaseInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF6FEA233E058800656702 /* UseCaseInterface.swift */; };
 		9210A0A1233F9CC20086556C /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9210A0A0233F9CC20086556C /* AccessibilityIdentifiers.swift */; };
@@ -70,6 +71,7 @@
 		8E59FA8E2341ED0400299CA3 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
 		8E59FA902341ED1600299CA3 /* TaskListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListPresenter.swift; sourceTree = "<group>"; };
 		8E59FA922341ED2100299CA3 /* TaskListWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListWireframe.swift; sourceTree = "<group>"; };
+		8EB96564234B3EF9000DFD8F /* DialogWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogWireframe.swift; sourceTree = "<group>"; };
 		8EDF6FE8233E055C00656702 /* AuthInfoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInfoInteractor.swift; sourceTree = "<group>"; };
 		8EDF6FEA233E058800656702 /* UseCaseInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseInterface.swift; sourceTree = "<group>"; };
 		9210A0A0233F9CC20086556C /* AccessibilityIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityIdentifiers.swift; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 			children = (
 				92EDE1B4232E80A400B3D94E /* Main.storyboard */,
 				92EDE1B9232E80A500B3D94E /* LaunchScreen.storyboard */,
+				8EB96564234B3EF9000DFD8F /* DialogWireframe.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -644,6 +647,7 @@
 				8EDF6FEB233E058800656702 /* UseCaseInterface.swift in Sources */,
 				92EDE1B1232E80A400B3D94E /* SceneDelegate.swift in Sources */,
 				92EDE1F0232F609900B3D94E /* RegisterInterfaces.swift in Sources */,
+				8EB96565234B3EF9000DFD8F /* DialogWireframe.swift in Sources */,
 				8E59FA912341ED1600299CA3 /* TaskListPresenter.swift in Sources */,
 				8E59FA932341ED2100299CA3 /* TaskListWireframe.swift in Sources */,
 				92EDE209232FBEF700B3D94E /* LoginInterfaces.swift in Sources */,
