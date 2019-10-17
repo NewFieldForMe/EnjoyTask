@@ -25,7 +25,8 @@ class TaskListWireframe: TaskListWireframeInterface {
     }
 
     func showLoginViewController() {
-        viewController.dismiss(animated: true, completion: nil)
+//        viewController.dismiss(animated: true, completion: nil)
+        RootRouter.setRootViewController()
     }
 }
 

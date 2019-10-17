@@ -9,6 +9,13 @@
 import UIKit
 
 class RootRouter {
+    static var window: UIWindow?
+
+    static func setRootViewController() {
+        window?.rootViewController = RootRouter.rootNavigationController()
+        window?.makeKeyAndVisible()
+    }
+
     static func rootNavigationController() -> UIViewController {
         let authUseCase = AuthInteractor()
         if authUseCase.currentUser == nil {

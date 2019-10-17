@@ -32,12 +32,7 @@ class LoginWireframe: LoginWireframeInterface {
     }
 
     func showTaskListViewController() {
-        // Todo: SceneDelegateを使ってRootViewを入れ替える
-        let taskListVC = TaskListWireframe.createModule()
-        let navigationController = UINavigationController()
-        navigationController.viewControllers = [taskListVC]
-        navigationController.modalPresentationStyle = .fullScreen
-        viewController.present(navigationController, animated: true, completion: nil)
+        RootRouter.setRootViewController()
     }
 }
 
