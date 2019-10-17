@@ -6,8 +6,8 @@
 - 家族と共有したい
 
 ## 開発環境
-- macOS 10.14.6
-- Xcode 11.1 GM Seed
+- macOS 10.15
+- Xcode 11.1
   - CocoaPods
   - SwiftLint
 CocoaPodsを使っているため、ソースコードをcloneした後 `pod install` を実行してください。
