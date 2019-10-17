@@ -17,6 +17,7 @@
 		8EB96565234B3EF9000DFD8F /* DialogWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB96564234B3EF9000DFD8F /* DialogWireframe.swift */; };
 		8EDF6FE9233E055C00656702 /* AuthInfoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF6FE8233E055C00656702 /* AuthInfoInteractor.swift */; };
 		8EDF6FEB233E058800656702 /* UseCaseInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF6FEA233E058800656702 /* UseCaseInterface.swift */; };
+		920B567A2358AA3400ED37E7 /* Scene.md in Resources */ = {isa = PBXBuildFile; fileRef = 920B56792358AA3400ED37E7 /* Scene.md */; };
 		9210A0A1233F9CC20086556C /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9210A0A0233F9CC20086556C /* AccessibilityIdentifiers.swift */; };
 		929DF7C0233FA3510005562E /* LoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929DF7BF233FA3510005562E /* LoginUITests.swift */; };
 		929DF7C2233FB1660005562E /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9210A0A0233F9CC20086556C /* AccessibilityIdentifiers.swift */; };
@@ -74,6 +75,7 @@
 		8EB96564234B3EF9000DFD8F /* DialogWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogWireframe.swift; sourceTree = "<group>"; };
 		8EDF6FE8233E055C00656702 /* AuthInfoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInfoInteractor.swift; sourceTree = "<group>"; };
 		8EDF6FEA233E058800656702 /* UseCaseInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseInterface.swift; sourceTree = "<group>"; };
+		920B56792358AA3400ED37E7 /* Scene.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Scene.md; sourceTree = "<group>"; };
 		9210A0A0233F9CC20086556C /* AccessibilityIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityIdentifiers.swift; sourceTree = "<group>"; };
 		929DF7BF233FA3510005562E /* LoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUITests.swift; sourceTree = "<group>"; };
 		92EDE1AB232E80A400B3D94E /* EnjoyTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnjoyTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +160,14 @@
 			path = "tasklist-module";
 			sourceTree = "<group>";
 		};
+		920B56782358AA1C00ED37E7 /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				920B56792358AA3400ED37E7 /* Scene.md */,
+			);
+			path = Docs;
+			sourceTree = "<group>";
+		};
 		929DF7BC233FA2EF0005562E /* modulesTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +179,7 @@
 		92EDE1A2232E80A400B3D94E = {
 			isa = PBXGroup;
 			children = (
+				920B56782358AA1C00ED37E7 /* Docs */,
 				92EDE1DE232E839C00B3D94E /* README.md */,
 				92EDE1AD232E80A400B3D94E /* EnjoyTask */,
 				92EDE1C4232E80A600B3D94E /* EnjoyTaskTests */,
@@ -454,6 +465,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				920B567A2358AA3400ED37E7 /* Scene.md in Resources */,
 				92EDE1BB232E80A500B3D94E /* LaunchScreen.storyboard in Resources */,
 				92EDE1B8232E80A500B3D94E /* Assets.xcassets in Resources */,
 				92EDE207232F919700B3D94E /* GoogleService-Info.plist in Resources */,
