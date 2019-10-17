@@ -9,6 +9,8 @@
 import UIKit
 
 class TaskListViewController: UIViewController {
+    var presenter: TaskListPresenterInterface!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // show search button and set action
@@ -18,7 +20,8 @@ class TaskListViewController: UIViewController {
     }
 
     @objc func logout() {
-        // Todo: ログアウト実行
-        self.dismiss(animated: true, completion: nil)
+        presenter.didSelectLogoutAction()
     }
 }
+
+extension TaskListViewController: TaskListViewInterface { }

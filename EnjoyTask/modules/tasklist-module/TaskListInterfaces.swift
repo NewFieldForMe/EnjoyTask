@@ -8,4 +8,12 @@
 
 import Foundation
 
-protocol TaskListWireframeInterface: class { }
+protocol TaskListViewInterface: class { }
+
+protocol TaskListPresenterInterface: class {
+    func didSelectLogoutAction()
+}
+
+protocol TaskListWireframeInterface: class {
+    func showLoginViewController()
+}

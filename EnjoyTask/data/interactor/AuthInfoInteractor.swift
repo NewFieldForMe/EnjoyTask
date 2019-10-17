@@ -36,4 +36,16 @@ struct AuthInteractor: AuthUseCase {
             onSuccess()
         }
     }
+
+    func logout() {
+        do {
+            try Auth.auth().signOut()
+        } catch {
+
+        }
+    }
+
+    var currentUser: User? {
+        return Auth.auth().currentUser
+    }
 }

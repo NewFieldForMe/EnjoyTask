@@ -7,3 +7,20 @@
 //
 
 import Foundation
+
+class TaskListPresenter: TaskListPresenterInterface {
+    weak var view: TaskListViewInterface!
+    let wireframe: TaskListWireframeInterface
+    let authUseCase: AuthUseCase
+
+    init(view: TaskListViewInterface, wireframe: TaskListWireframeInterface, authUseCase: AuthUseCase) {
+        self.view = view
+        self.wireframe = wireframe
+        self.authUseCase = authUseCase
+    }
+
+    func didSelectLogoutAction() {
+        authUseCase.logout()
+        wireframe.showLoginViewController()
+    }
+}

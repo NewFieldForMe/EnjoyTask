@@ -10,7 +10,15 @@ import UIKit
 
 class RootRouter {
     static func rootNavigationController() -> UIViewController {
-        let loginViewController = LoginWireframe.createModule()
-        return loginViewController
+        let authUseCase = AuthInteractor()
+        if authUseCase.currentUser == nil {
+            return LoginWireframe.createModule()
+        } else {
+            let taskListVC = TaskListWireframe.createModule()
+            let navigationController = UINavigationController()
+            navigationController.viewControllers = [taskListVC]
+            navigationController.modalPresentationStyle = .fullScreen
+            return navigationController
+        }
     }
 }
