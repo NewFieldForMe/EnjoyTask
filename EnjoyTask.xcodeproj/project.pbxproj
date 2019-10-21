@@ -18,6 +18,10 @@
 		8EDF6FE9233E055C00656702 /* AuthInfoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF6FE8233E055C00656702 /* AuthInfoInteractor.swift */; };
 		8EDF6FEB233E058800656702 /* UseCaseInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF6FEA233E058800656702 /* UseCaseInterface.swift */; };
 		9210A0A1233F9CC20086556C /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9210A0A0233F9CC20086556C /* AccessibilityIdentifiers.swift */; };
+		928208E1235DEE3000C93114 /* EditTaskInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928208E0235DEE3000C93114 /* EditTaskInterfaces.swift */; };
+		928208E3235DEE4400C93114 /* EditTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928208E2235DEE4400C93114 /* EditTaskViewController.swift */; };
+		928208E5235DEE5500C93114 /* EditTaskPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928208E4235DEE5500C93114 /* EditTaskPresenter.swift */; };
+		928208E7235DEE6400C93114 /* EditTaskWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928208E6235DEE6400C93114 /* EditTaskWireframe.swift */; };
 		929DF7C0233FA3510005562E /* LoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929DF7BF233FA3510005562E /* LoginUITests.swift */; };
 		929DF7C2233FB1660005562E /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9210A0A0233F9CC20086556C /* AccessibilityIdentifiers.swift */; };
 		92EDE1AF232E80A400B3D94E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE1AE232E80A400B3D94E /* AppDelegate.swift */; };
@@ -75,6 +79,10 @@
 		8EDF6FE8233E055C00656702 /* AuthInfoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInfoInteractor.swift; sourceTree = "<group>"; };
 		8EDF6FEA233E058800656702 /* UseCaseInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseInterface.swift; sourceTree = "<group>"; };
 		9210A0A0233F9CC20086556C /* AccessibilityIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityIdentifiers.swift; sourceTree = "<group>"; };
+		928208E0235DEE3000C93114 /* EditTaskInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskInterfaces.swift; sourceTree = "<group>"; };
+		928208E2235DEE4400C93114 /* EditTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskViewController.swift; sourceTree = "<group>"; };
+		928208E4235DEE5500C93114 /* EditTaskPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskPresenter.swift; sourceTree = "<group>"; };
+		928208E6235DEE6400C93114 /* EditTaskWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskWireframe.swift; sourceTree = "<group>"; };
 		929DF7BF233FA3510005562E /* LoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUITests.swift; sourceTree = "<group>"; };
 		92EDE1AB232E80A400B3D94E /* EnjoyTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnjoyTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92EDE1AE232E80A400B3D94E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +166,17 @@
 			path = "tasklist-module";
 			sourceTree = "<group>";
 		};
+		928208DF235DEE1500C93114 /* edittask-module */ = {
+			isa = PBXGroup;
+			children = (
+				928208E0235DEE3000C93114 /* EditTaskInterfaces.swift */,
+				928208E2235DEE4400C93114 /* EditTaskViewController.swift */,
+				928208E4235DEE5500C93114 /* EditTaskPresenter.swift */,
+				928208E6235DEE6400C93114 /* EditTaskWireframe.swift */,
+			);
+			path = "edittask-module";
+			sourceTree = "<group>";
+		};
 		929DF7BC233FA2EF0005562E /* modulesTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +247,7 @@
 		92EDE1E4232EA20400B3D94E /* modules */ = {
 			isa = PBXGroup;
 			children = (
+				928208DF235DEE1500C93114 /* edittask-module */,
 				8E59FA8B2341E79A00299CA3 /* tasklist-module */,
 				92EDE1E9232F5F1300B3D94E /* register-module */,
 				92EDE1E5232EA23A00B3D94E /* login-module */,
@@ -589,7 +609,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/modules/register-module/RegisterInterfaces.swift\" \\\n\"${INPUT_DIR}/modules/login-module/LoginInterfaces.swift\" \\\n\"${INPUT_DIR}/data/UseCaseInterface.swift\"\n";
+			shellScript = "# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/modules/register-module/RegisterInterfaces.swift\" \\\n\"${INPUT_DIR}/modules/login-module/LoginInterfaces.swift\" \\\n\"${INPUT_DIR}/modules/edittask-module/EditTaskInterfaces.swift\" \\\n\"${INPUT_DIR}/data/UseCaseInterface.swift\"\n";
 		};
 		B65B1DCABC5850246E9CF4FD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -646,15 +666,19 @@
 				92EDE20D232FBF1100B3D94E /* LoginPresenter.swift in Sources */,
 				8EDF6FEB233E058800656702 /* UseCaseInterface.swift in Sources */,
 				92EDE1B1232E80A400B3D94E /* SceneDelegate.swift in Sources */,
+				928208E5235DEE5500C93114 /* EditTaskPresenter.swift in Sources */,
 				92EDE1F0232F609900B3D94E /* RegisterInterfaces.swift in Sources */,
+				928208E7235DEE6400C93114 /* EditTaskWireframe.swift in Sources */,
 				8EB96565234B3EF9000DFD8F /* DialogWireframe.swift in Sources */,
 				8E59FA912341ED1600299CA3 /* TaskListPresenter.swift in Sources */,
+				928208E1235DEE3000C93114 /* EditTaskInterfaces.swift in Sources */,
 				8E59FA932341ED2100299CA3 /* TaskListWireframe.swift in Sources */,
 				92EDE209232FBEF700B3D94E /* LoginInterfaces.swift in Sources */,
 				92EDE1F4232F60C900B3D94E /* RegisterWireframe.swift in Sources */,
 				9210A0A1233F9CC20086556C /* AccessibilityIdentifiers.swift in Sources */,
 				92EDE1EE232F607100B3D94E /* RegisterViewController.swift in Sources */,
 				8E59FA8F2341ED0400299CA3 /* TaskListViewController.swift in Sources */,
+				928208E3235DEE4400C93114 /* EditTaskViewController.swift in Sources */,
 				8EDF6FE9233E055C00656702 /* AuthInfoInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
