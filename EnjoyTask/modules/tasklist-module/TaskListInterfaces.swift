@@ -12,8 +12,10 @@ protocol TaskListViewInterface: class { }
 
 protocol TaskListPresenterInterface: class {
     func didSelectLogoutAction()
+    func didSelectAddTaskAction()
 }
 
 protocol TaskListWireframeInterface: class {
     func showLoginViewController()
+    func showAddTaskViewController()
 }

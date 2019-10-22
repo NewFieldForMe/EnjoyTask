@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+protocol EditTaskViewInterface: class { }
+protocol EditTaskPresenterInterface: class { }
+protocol EditTaskWireframeInterface: class { }

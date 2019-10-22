@@ -420,6 +420,9 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Shs-d3-VYR">
                                 <rect key="frame" x="139" y="821" width="136" height="30"/>
+                                <connections>
+                                    <action selector="tapAddTaskButton:" destination="UuP-p7-fxa" eventType="touchUpInside" id="x4v-bm-W77"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -454,6 +457,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="76E-Vw-N2Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1482.608695652174" y="131.91964285714286"/>
+        </scene>
+        <!--Edit Task View Controller-->
+        <scene sceneID="pb8-MD-kfH">
+            <objects>
+                <viewController storyboardIdentifier="editTaskViewController" id="aqw-gO-iUy" customClass="EditTaskViewController" customModule="EnjoyTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0nd-OF-q3Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="tVu-o5-MY3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JQY-kr-myS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2246" y="132"/>
         </scene>
     </scenes>
     <resources>

@@ -28,6 +28,11 @@ class TaskListWireframe: TaskListWireframeInterface {
 //        viewController.dismiss(animated: true, completion: nil)
         RootRouter.setRootViewController()
     }
+
+    func showAddTaskViewController() {
+        let vc = EditTaskWireframe.createModule()
+        viewController.present(vc, animated: true, completion: nil)
+    }
 }
 
 private extension TaskListWireframe {

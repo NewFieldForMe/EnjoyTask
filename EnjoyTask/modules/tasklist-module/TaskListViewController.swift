@@ -22,6 +22,10 @@ class TaskListViewController: UIViewController {
     @objc func logout() {
         presenter.didSelectLogoutAction()
     }
+
+    @IBAction func tapAddTaskButton(_ sender: UIButton) {
+        presenter.didSelectAddTaskAction()
+    }
 }
 
 extension TaskListViewController: TaskListViewInterface { }
