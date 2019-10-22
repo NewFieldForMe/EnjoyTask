@@ -12,7 +12,7 @@ protocol TaskListViewInterface: class { }
 
 protocol TaskListPresenterInterface: class {
     func didSelectLogoutAction()
-    func didSelectAddTaskAction()
+    func didSelectMoveToAddTaskAction()
 }
 
 protocol TaskListWireframeInterface: class {

@@ -18,6 +18,8 @@
 		8EDF6FE9233E055C00656702 /* AuthInfoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF6FE8233E055C00656702 /* AuthInfoInteractor.swift */; };
 		8EDF6FEB233E058800656702 /* UseCaseInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF6FEA233E058800656702 /* UseCaseInterface.swift */; };
 		9210A0A1233F9CC20086556C /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9210A0A0233F9CC20086556C /* AccessibilityIdentifiers.swift */; };
+		9252E607235F00E200797C7A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252E606235F00E200797C7A /* Task.swift */; };
+		9252E609235F033700797C7A /* TaskInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9252E608235F033600797C7A /* TaskInteractor.swift */; };
 		928208E1235DEE3000C93114 /* EditTaskInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928208E0235DEE3000C93114 /* EditTaskInterfaces.swift */; };
 		928208E3235DEE4400C93114 /* EditTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928208E2235DEE4400C93114 /* EditTaskViewController.swift */; };
 		928208E5235DEE5500C93114 /* EditTaskPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928208E4235DEE5500C93114 /* EditTaskPresenter.swift */; };
@@ -79,6 +81,8 @@
 		8EDF6FE8233E055C00656702 /* AuthInfoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInfoInteractor.swift; sourceTree = "<group>"; };
 		8EDF6FEA233E058800656702 /* UseCaseInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseInterface.swift; sourceTree = "<group>"; };
 		9210A0A0233F9CC20086556C /* AccessibilityIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityIdentifiers.swift; sourceTree = "<group>"; };
+		9252E606235F00E200797C7A /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		9252E608235F033600797C7A /* TaskInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInteractor.swift; sourceTree = "<group>"; };
 		928208E0235DEE3000C93114 /* EditTaskInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskInterfaces.swift; sourceTree = "<group>"; };
 		928208E2235DEE4400C93114 /* EditTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskViewController.swift; sourceTree = "<group>"; };
 		928208E4235DEE5500C93114 /* EditTaskPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskPresenter.swift; sourceTree = "<group>"; };
@@ -301,6 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				8EDF6FE8233E055C00656702 /* AuthInfoInteractor.swift */,
+				9252E608235F033600797C7A /* TaskInteractor.swift */,
 			);
 			path = interactor;
 			sourceTree = "<group>";
@@ -308,6 +313,7 @@
 		92EDE1EC232F5F8F00B3D94E /* entity */ = {
 			isa = PBXGroup;
 			children = (
+				9252E606235F00E200797C7A /* Task.swift */,
 			);
 			path = entity;
 			sourceTree = "<group>";
@@ -669,10 +675,12 @@
 				928208E5235DEE5500C93114 /* EditTaskPresenter.swift in Sources */,
 				92EDE1F0232F609900B3D94E /* RegisterInterfaces.swift in Sources */,
 				928208E7235DEE6400C93114 /* EditTaskWireframe.swift in Sources */,
+				9252E609235F033700797C7A /* TaskInteractor.swift in Sources */,
 				8EB96565234B3EF9000DFD8F /* DialogWireframe.swift in Sources */,
 				8E59FA912341ED1600299CA3 /* TaskListPresenter.swift in Sources */,
 				928208E1235DEE3000C93114 /* EditTaskInterfaces.swift in Sources */,
 				8E59FA932341ED2100299CA3 /* TaskListWireframe.swift in Sources */,
+				9252E607235F00E200797C7A /* Task.swift in Sources */,
 				92EDE209232FBEF700B3D94E /* LoginInterfaces.swift in Sources */,
 				92EDE1F4232F60C900B3D94E /* RegisterWireframe.swift in Sources */,
 				9210A0A1233F9CC20086556C /* AccessibilityIdentifiers.swift in Sources */,

@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+class EditTaskPresenter: EditTaskPresenterInterface {
+    let tasksUseCase: TasksUseCase
+
+    init(tasksUseCase: TasksUseCase) {
+        self.tasksUseCase = tasksUseCase
+    }
+
+    func didSelectAddTaskAction(title: String) {
+        let task = Task(title: title)
+        tasksUseCase.addTask(task)
+    }
+}

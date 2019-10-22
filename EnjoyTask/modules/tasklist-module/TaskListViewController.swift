@@ -24,7 +24,7 @@ class TaskListViewController: UIViewController {
     }
 
     @IBAction func tapAddTaskButton(_ sender: UIButton) {
-        presenter.didSelectAddTaskAction()
+        presenter.didSelectMoveToAddTaskAction()
     }
 }
 

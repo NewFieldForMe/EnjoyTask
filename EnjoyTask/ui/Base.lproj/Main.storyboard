@@ -484,6 +484,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="tVu-o5-MY3"/>
                     </view>
+                    <connections>
+                        <outlet property="titleTextField" destination="xlW-W3-Jz0" id="M3A-1a-V7p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JQY-kr-myS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

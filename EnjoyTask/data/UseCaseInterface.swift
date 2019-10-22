@@ -16,3 +16,7 @@ protocol AuthUseCase {
     func logout()
     var currentUser: User? { get }
 }
+
+protocol TasksUseCase {
+    func addTask(_: Task)
+}

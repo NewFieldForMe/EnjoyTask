@@ -17,6 +17,8 @@ class EditTaskWireframe: EditTaskWireframeInterface {
 
     static func createModule() -> UIViewController {
         let vc = buildViewController()
+        let taskUseCase = TaskInteractor()
+        vc.presenter = EditTaskPresenter(tasksUseCase: taskUseCase)
         return vc
     }
 }

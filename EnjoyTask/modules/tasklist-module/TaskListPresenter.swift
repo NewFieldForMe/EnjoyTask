@@ -24,7 +24,7 @@ class TaskListPresenter: TaskListPresenterInterface {
         wireframe.showLoginViewController()
     }
 
-    func didSelectAddTaskAction() {
+    func didSelectMoveToAddTaskAction() {
         wireframe.showAddTaskViewController()
     }
 }

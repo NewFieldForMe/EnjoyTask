@@ -9,5 +9,7 @@
 import Foundation
 
 protocol EditTaskViewInterface: class { }
-protocol EditTaskPresenterInterface: class { }
+protocol EditTaskPresenterInterface: class {
+    func didSelectAddTaskAction(title: String)
+}
 protocol EditTaskWireframeInterface: class { }
