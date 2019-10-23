@@ -19,7 +19,8 @@ class TaskListWireframe: TaskListWireframeInterface {
         let vc = buildViewController()
         let wireframe = TaskListWireframe(viewController: vc)
         let authUseCase = AuthInteractor()
-        let presenter = TaskListPresenter(view: vc, wireframe: wireframe, authUseCase: authUseCase)
+        let taskUseCase = TaskInteractor()
+        let presenter = TaskListPresenter(view: vc, wireframe: wireframe, authUseCase: authUseCase, taskUseCase: taskUseCase)
         vc.presenter = presenter
         return vc
     }

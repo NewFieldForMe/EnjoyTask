@@ -19,4 +19,5 @@ protocol AuthUseCase {
 
 protocol TasksUseCase {
     func addTask(_: Task)
+    func tasks(completion: @escaping ([Task], Error?) -> Void)
 }

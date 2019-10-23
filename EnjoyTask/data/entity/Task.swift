@@ -7,7 +7,17 @@
 //
 
 import Foundation
+import Firebase
 
 struct Task {
     let title: String
+
+    init(title: String) {
+        self.title = title
+    }
+
+    init(document: QueryDocumentSnapshot) {
+        let data = document.data()
+        self.title = data["title"] as! String
+    }
 }

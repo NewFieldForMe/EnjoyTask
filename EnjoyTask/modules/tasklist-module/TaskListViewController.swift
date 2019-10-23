@@ -17,6 +17,7 @@ class TaskListViewController: UIViewController {
         let logoutButton = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(self.logout))
         // add the button to navigationBar
         self.navigationItem.setRightBarButtonItems([logoutButton], animated: true)
+        presenter.loadTasks()
     }
 
     @objc func logout() {
