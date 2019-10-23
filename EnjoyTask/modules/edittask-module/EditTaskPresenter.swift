@@ -9,14 +9,17 @@
 import Foundation
 
 class EditTaskPresenter: EditTaskPresenterInterface {
+    let wireframe: EditTaskWireframeInterface
     let tasksUseCase: TasksUseCase
 
-    init(tasksUseCase: TasksUseCase) {
+    init(tasksUseCase: TasksUseCase, wireframe: EditTaskWireframeInterface) {
         self.tasksUseCase = tasksUseCase
+        self.wireframe = wireframe
     }
 
     func didSelectAddTaskAction(title: String) {
         let task = Task(title: title)
         tasksUseCase.addTask(task)
+        wireframe.dismiss()
     }
 }

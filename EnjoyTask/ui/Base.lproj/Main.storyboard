@@ -466,22 +466,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xlW-W3-Jz0">
-                                <rect key="frame" x="54" y="216" width="323" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xlW-W3-Jz0">
+                                <rect key="frame" x="32" y="204" width="350" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NlW-hY-td2">
-                                <rect key="frame" x="192" y="298" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NlW-hY-td2">
+                                <rect key="frame" x="145.5" y="270" width="123" height="30"/>
+                                <state key="normal" title="タスクを登録する"/>
                                 <connections>
                                     <action selector="tapRegisterButton:" destination="aqw-gO-iUy" eventType="touchUpInside" id="Yph-cx-Gxk"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xlW-W3-Jz0" firstAttribute="leading" secondItem="tVu-o5-MY3" secondAttribute="leading" constant="32" id="9ya-ZG-wgY"/>
+                            <constraint firstItem="NlW-hY-td2" firstAttribute="top" secondItem="xlW-W3-Jz0" secondAttribute="bottom" constant="32" id="Kq1-Ow-Np2"/>
+                            <constraint firstItem="tVu-o5-MY3" firstAttribute="trailing" secondItem="xlW-W3-Jz0" secondAttribute="trailing" constant="32" id="bv3-VO-rtl"/>
+                            <constraint firstItem="NlW-hY-td2" firstAttribute="centerX" secondItem="tVu-o5-MY3" secondAttribute="centerX" id="hcF-Id-Beb"/>
+                            <constraint firstItem="xlW-W3-Jz0" firstAttribute="top" secondItem="tVu-o5-MY3" secondAttribute="top" constant="160" id="zjw-EO-CpT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="tVu-o5-MY3"/>
                     </view>
                     <connections>

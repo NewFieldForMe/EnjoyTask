@@ -12,4 +12,7 @@ protocol EditTaskViewInterface: class { }
 protocol EditTaskPresenterInterface: class {
     func didSelectAddTaskAction(title: String)
 }
-protocol EditTaskWireframeInterface: class { }
+
+protocol EditTaskWireframeInterface: class {
+    func dismiss()
+}

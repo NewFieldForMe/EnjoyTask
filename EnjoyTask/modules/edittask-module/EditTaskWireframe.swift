@@ -18,8 +18,13 @@ class EditTaskWireframe: EditTaskWireframeInterface {
     static func createModule() -> UIViewController {
         let vc = buildViewController()
         let taskUseCase = TaskInteractor()
-        vc.presenter = EditTaskPresenter(tasksUseCase: taskUseCase)
+        let wireframe = EditTaskWireframe(viewController: vc)
+        vc.presenter = EditTaskPresenter(tasksUseCase: taskUseCase, wireframe: wireframe)
         return vc
+    }
+
+    func dismiss() {
+        viewController.dismiss(animated: true, completion: nil)
     }
 }
 
