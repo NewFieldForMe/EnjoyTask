@@ -453,6 +453,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="x5F-rp-5Qr"/>
                     </view>
+                    <connections>
+                        <outlet property="taskListTableView" destination="qll-2S-t2P" id="DPN-hS-yP5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="76E-Vw-N2Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

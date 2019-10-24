@@ -26,6 +26,8 @@
 		928208E7235DEE6400C93114 /* EditTaskWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928208E6235DEE6400C93114 /* EditTaskWireframe.swift */; };
 		929DF7C0233FA3510005562E /* LoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929DF7BF233FA3510005562E /* LoginUITests.swift */; };
 		929DF7C2233FB1660005562E /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9210A0A0233F9CC20086556C /* AccessibilityIdentifiers.swift */; };
+		92AFADCC2361CF5800F1A3B4 /* TaskListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AFADCB2361CF5800F1A3B4 /* TaskListTableViewCell.swift */; };
+		92AFADCE2361CF6700F1A3B4 /* TaskListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92AFADCD2361CF6700F1A3B4 /* TaskListTableViewCell.xib */; };
 		92EDE1AF232E80A400B3D94E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE1AE232E80A400B3D94E /* AppDelegate.swift */; };
 		92EDE1B1232E80A400B3D94E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE1B0232E80A400B3D94E /* SceneDelegate.swift */; };
 		92EDE1B6232E80A400B3D94E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92EDE1B4232E80A400B3D94E /* Main.storyboard */; };
@@ -88,6 +90,8 @@
 		928208E4235DEE5500C93114 /* EditTaskPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskPresenter.swift; sourceTree = "<group>"; };
 		928208E6235DEE6400C93114 /* EditTaskWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskWireframe.swift; sourceTree = "<group>"; };
 		929DF7BF233FA3510005562E /* LoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUITests.swift; sourceTree = "<group>"; };
+		92AFADCB2361CF5800F1A3B4 /* TaskListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListTableViewCell.swift; sourceTree = "<group>"; };
+		92AFADCD2361CF6700F1A3B4 /* TaskListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskListTableViewCell.xib; sourceTree = "<group>"; };
 		92EDE1AB232E80A400B3D94E /* EnjoyTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnjoyTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92EDE1AE232E80A400B3D94E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92EDE1B0232E80A400B3D94E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -189,6 +193,15 @@
 			path = modulesTests;
 			sourceTree = "<group>";
 		};
+		92AFADCA2361CF3100F1A3B4 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				92AFADCB2361CF5800F1A3B4 /* TaskListTableViewCell.swift */,
+				92AFADCD2361CF6700F1A3B4 /* TaskListTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
 		92EDE1A2232E80A400B3D94E = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +286,7 @@
 		92EDE1E8232EA2B700B3D94E /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				92AFADCA2361CF3100F1A3B4 /* TableViewCell */,
 				92EDE1B4232E80A400B3D94E /* Main.storyboard */,
 				92EDE1B9232E80A500B3D94E /* LaunchScreen.storyboard */,
 				8EB96564234B3EF9000DFD8F /* DialogWireframe.swift */,
@@ -484,6 +498,7 @@
 				92EDE1B8232E80A500B3D94E /* Assets.xcassets in Resources */,
 				92EDE207232F919700B3D94E /* GoogleService-Info.plist in Resources */,
 				92EDE1DF232E839C00B3D94E /* README.md in Resources */,
+				92AFADCE2361CF6700F1A3B4 /* TaskListTableViewCell.xib in Resources */,
 				92EDE1B6232E80A400B3D94E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -677,6 +692,7 @@
 				928208E7235DEE6400C93114 /* EditTaskWireframe.swift in Sources */,
 				9252E609235F033700797C7A /* TaskInteractor.swift in Sources */,
 				8EB96565234B3EF9000DFD8F /* DialogWireframe.swift in Sources */,
+				92AFADCC2361CF5800F1A3B4 /* TaskListTableViewCell.swift in Sources */,
 				8E59FA912341ED1600299CA3 /* TaskListPresenter.swift in Sources */,
 				928208E1235DEE3000C93114 /* EditTaskInterfaces.swift in Sources */,
 				8E59FA932341ED2100299CA3 /* TaskListWireframe.swift in Sources */,

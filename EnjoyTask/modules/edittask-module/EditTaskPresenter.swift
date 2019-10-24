@@ -11,15 +11,18 @@ import Foundation
 class EditTaskPresenter: EditTaskPresenterInterface {
     let wireframe: EditTaskWireframeInterface
     let tasksUseCase: TasksUseCase
+    let editTaskCompletion: (() -> Void)?
 
-    init(tasksUseCase: TasksUseCase, wireframe: EditTaskWireframeInterface) {
+    init(tasksUseCase: TasksUseCase, wireframe: EditTaskWireframeInterface, editTaskCompletion: (() -> Void)?) {
         self.tasksUseCase = tasksUseCase
         self.wireframe = wireframe
+        self.editTaskCompletion = editTaskCompletion
     }
 
     func didSelectAddTaskAction(title: String) {
         let task = Task(title: title)
         tasksUseCase.addTask(task)
+        editTaskCompletion?()
         wireframe.dismiss()
     }
 }

@@ -30,8 +30,8 @@ class TaskListWireframe: TaskListWireframeInterface {
         RootRouter.setRootViewController()
     }
 
-    func showAddTaskViewController() {
-        let vc = EditTaskWireframe.createModule()
+    func showAddTaskViewController(editTaskCompletion: (() -> Void)?) {
+        let vc = EditTaskWireframe.createModule(editTaskCompletion: editTaskCompletion)
         viewController.present(vc, animated: true, completion: nil)
     }
 }

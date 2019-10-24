@@ -14,6 +14,8 @@ class TaskListPresenter: TaskListPresenterInterface {
     let authUseCase: AuthUseCase
     let taskUseCase: TasksUseCase
 
+    var tasks: [Task]?
+
     init(view: TaskListViewInterface, wireframe: TaskListWireframeInterface, authUseCase: AuthUseCase, taskUseCase: TasksUseCase) {
         self.view = view
         self.wireframe = wireframe
@@ -22,9 +24,10 @@ class TaskListPresenter: TaskListPresenterInterface {
     }
 
     func loadTasks() {
-        taskUseCase.tasks { tasks, error in
-            print(tasks)
-            print(error)
+        taskUseCase.tasks { [weak self] tasks, error in
+            if let error = error { print(error) }
+            self?.tasks = tasks
+            self?.view.reloadTableView()
         }
     }
 
@@ -34,6 +37,6 @@ class TaskListPresenter: TaskListPresenterInterface {
     }
 
     func didSelectMoveToAddTaskAction() {
-        wireframe.showAddTaskViewController()
+        wireframe.showAddTaskViewController(editTaskCompletion: loadTasks)
     }
 }

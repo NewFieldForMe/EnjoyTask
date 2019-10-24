@@ -8,15 +8,18 @@
 
 import Foundation
 
-protocol TaskListViewInterface: class { }
+protocol TaskListViewInterface: class {
+    func reloadTableView()
+}
 
 protocol TaskListPresenterInterface: class {
     func didSelectLogoutAction()
     func didSelectMoveToAddTaskAction()
     func loadTasks()
+    var tasks: [Task]? { get }
 }
 
 protocol TaskListWireframeInterface: class {
     func showLoginViewController()
-    func showAddTaskViewController()
+    func showAddTaskViewController(editTaskCompletion: (() -> Void)?)
 }

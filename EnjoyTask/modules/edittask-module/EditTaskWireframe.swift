@@ -15,11 +15,11 @@ class EditTaskWireframe: EditTaskWireframeInterface {
         self.viewController = viewController
     }
 
-    static func createModule() -> UIViewController {
+    static func createModule(editTaskCompletion: (() -> Void)?) -> UIViewController {
         let vc = buildViewController()
         let taskUseCase = TaskInteractor()
         let wireframe = EditTaskWireframe(viewController: vc)
-        vc.presenter = EditTaskPresenter(tasksUseCase: taskUseCase, wireframe: wireframe)
+        vc.presenter = EditTaskPresenter(tasksUseCase: taskUseCase, wireframe: wireframe, editTaskCompletion: editTaskCompletion)
         return vc
     }
 
