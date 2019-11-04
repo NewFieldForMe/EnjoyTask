@@ -17,7 +17,8 @@ struct TaskInteractor: TasksUseCase {
         let currentUserId = AuthInteractor().currentUser?.uid
         db.collection("users").document(currentUserId!)
             .collection("tasks").addDocument(data: [
-                "title": task.title
+                "title": task.title,
+                "createdAt": Date()
             ])
     }
 

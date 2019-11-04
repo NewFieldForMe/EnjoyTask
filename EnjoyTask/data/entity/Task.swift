@@ -11,13 +11,16 @@ import Firebase
 
 struct Task {
     let title: String
+    let createdAt: Date?
 
-    init(title: String) {
+    init(title: String, createdAt: Date? = nil) {
         self.title = title
+        self.createdAt = createdAt
     }
 
     init(document: QueryDocumentSnapshot) {
         let data = document.data()
         self.title = data["title"] as! String
+        self.createdAt = (data["createdAt"] as! Timestamp).dateValue()
     }
 }
