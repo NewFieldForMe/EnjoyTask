@@ -25,7 +25,9 @@ struct TaskInteractor: TasksUseCase {
     func tasks(completion: @escaping ([Task], Error?) -> Void) {
         let currentUserId = AuthInteractor().currentUser?.uid
         db.collection("users").document(currentUserId!)
-            .collection("tasks").getDocuments { (querySnapshot, error) in
+            .collection("tasks")
+            .order(by: "createdAt", descending: true)
+            .getDocuments { (querySnapshot, error) in
             if let error = error {
                 print("Error getting documents: \(error)")
                 completion([], error)
