@@ -15,6 +15,7 @@ class LoginViewController: UIViewController {
         didSet {
             emailTextField.accessibilityIdentifier = AccessibilityIdentifiers.Login.emailTextField
             setPlaceholderLabelColor(emailTextField)
+            emailTextField.addTarget(self, action: #selector(changeLoginButtonEnabled), for: .editingChanged)
         }
     }
 
@@ -22,6 +23,15 @@ class LoginViewController: UIViewController {
         didSet {
             passwordTextField.accessibilityIdentifier = AccessibilityIdentifiers.Login.passwordTextField
             setPlaceholderLabelColor(passwordTextField)
+            passwordTextField.addTarget(self, action: #selector(changeLoginButtonEnabled), for: .editingChanged)
+        }
+    }
+
+    @IBOutlet weak var loginButton: UIButton! {
+        didSet {
+            loginButton.layer.cornerRadius = 4
+            loginButton.setTitleColor(UIColor(displayP3Red: 0, green: 0, blue: 0, alpha: 0.82), for: .normal)
+            loginButton.setTitleColor(UIColor(displayP3Red: 0, green: 0, blue: 0, alpha: 0.32), for: .disabled)
         }
     }
 
@@ -40,6 +50,7 @@ class LoginViewController: UIViewController {
             action: #selector(dismissKeyboard)
         )
 
+        changeLoginButtonEnabled()
         view.addGestureRecognizer(tap)
     }
 }
@@ -75,5 +86,13 @@ private extension LoginViewController {
 
     @objc func dismissKeyboard() {
         view.endEditing(true)
+    }
+
+    @objc func changeLoginButtonEnabled() {
+        guard let emailText = emailTextField.text, let passwordText = passwordTextField.text, !emailText.isEmpty && !passwordText.isEmpty else {
+            loginButton.isEnabled = false
+            return
+        }
+        loginButton.isEnabled = true
     }
 }

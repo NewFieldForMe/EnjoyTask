@@ -43,7 +43,7 @@
                                                 <textInputTraits key="textInputTraits" keyboardType="alphabet" textContentType="email"/>
                                             </textField>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enjoytask_log" translatesAutoresizingMaskIntoConstraints="NO" id="1ub-NO-Scv">
-                                                <rect key="frame" x="42" y="134" width="330" height="136"/>
+                                                <rect key="frame" x="42" y="202" width="330" height="68"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usr-QC-nne">
                                                 <rect key="frame" x="42" y="488" width="330" height="11"/>
@@ -79,7 +79,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                                 <state key="normal" title="ログイン">
-                                                    <color key="titleColor" white="0.0" alpha="0.42999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.42999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="tapLoginButton:" destination="Amk-jr-FEZ" eventType="touchUpInside" id="yYo-Fg-Nhf"/>
@@ -181,6 +181,7 @@
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="TcO-QJ-Lzv" id="9uC-vl-Sk6"/>
+                        <outlet property="loginButton" destination="AtR-bS-DgF" id="pkE-5m-SMw"/>
                         <outlet property="passwordTextField" destination="66k-UO-Wem" id="ZNj-R4-NsK"/>
                     </connections>
                 </viewController>
