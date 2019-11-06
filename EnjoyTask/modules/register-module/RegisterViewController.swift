@@ -15,6 +15,7 @@ class RegisterViewController: UIViewController {
         didSet {
             emailTextField.accessibilityIdentifier = AccessibilityIdentifiers.Login.emailTextField
             setPlaceholderLabelColor(emailTextField)
+            emailTextField.addTarget(self, action: #selector(changeRegisterButtonEnabled), for: .editingChanged)
         }
     }
 
@@ -22,6 +23,16 @@ class RegisterViewController: UIViewController {
         didSet {
             passwordTextField.accessibilityIdentifier = AccessibilityIdentifiers.Login.passwordTextField
             setPlaceholderLabelColor(passwordTextField)
+            passwordTextField.addTarget(self, action: #selector(changeRegisterButtonEnabled), for: .editingChanged)
+
+        }
+    }
+
+    @IBOutlet weak var registerButton: UIButton! {
+        didSet {
+            registerButton.layer.cornerRadius = 4
+            registerButton.setTitleColor(UIColor(displayP3Red: 0, green: 0, blue: 0, alpha: 0.82), for: .normal)
+            registerButton.setTitleColor(UIColor(displayP3Red: 0, green: 0, blue: 0, alpha: 0.32), for: .disabled)
         }
     }
 
@@ -40,6 +51,7 @@ class RegisterViewController: UIViewController {
             action: #selector(dismissKeyboard)
         )
 
+        changeRegisterButtonEnabled()
         view.addGestureRecognizer(tap)
     }
 }
@@ -67,5 +79,13 @@ private extension RegisterViewController {
 
     @objc func dismissKeyboard() {
         view.endEditing(true)
+    }
+
+    @objc func changeRegisterButtonEnabled() {
+        guard let emailText = emailTextField.text, let passwordText = passwordTextField.text, !emailText.isEmpty && !passwordText.isEmpty else {
+            registerButton.isEnabled = false
+            return
+        }
+        registerButton.isEnabled = true
     }
 }
