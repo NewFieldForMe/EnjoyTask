@@ -31,8 +31,8 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var registerButton: UIButton! {
         didSet {
             registerButton.layer.cornerRadius = 4
-            registerButton.setTitleColor(UIColor(displayP3Red: 0, green: 0, blue: 0, alpha: 0.82), for: .normal)
-            registerButton.setTitleColor(UIColor(displayP3Red: 0, green: 0, blue: 0, alpha: 0.32), for: .disabled)
+            registerButton.setTitleColor(UIColor.definedBlack, for: .normal)
+            registerButton.setTitleColor(UIColor.definedDisabledBlack, for: .disabled)
         }
     }
 

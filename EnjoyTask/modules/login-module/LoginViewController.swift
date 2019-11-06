@@ -30,8 +30,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton! {
         didSet {
             loginButton.layer.cornerRadius = 4
-            loginButton.setTitleColor(UIColor(displayP3Red: 0, green: 0, blue: 0, alpha: 0.82), for: .normal)
-            loginButton.setTitleColor(UIColor(displayP3Red: 0, green: 0, blue: 0, alpha: 0.32), for: .disabled)
+            loginButton.setTitleColor(UIColor.definedBlack, for: .normal)
+            loginButton.setTitleColor(UIColor.definedDisabledBlack, for: .disabled)
         }
     }
 

@@ -48,6 +48,7 @@
 		92EDE20F232FBF1C00B3D94E /* LoginWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE20E232FBF1C00B3D94E /* LoginWireframe.swift */; };
 		92EDE212232FBFF100B3D94E /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE211232FBFF100B3D94E /* RootRouter.swift */; };
 		92EDE215232FCFE200B3D94E /* LoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EDE214232FCFE200B3D94E /* LoginPresenterTests.swift */; };
+		92FDF6F123730A98004601DD /* DefinedColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FDF6F023730A98004601DD /* DefinedColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,7 @@
 		92EDE20E232FBF1C00B3D94E /* LoginWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWireframe.swift; sourceTree = "<group>"; };
 		92EDE211232FBFF100B3D94E /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
 		92EDE214232FCFE200B3D94E /* LoginPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
+		92FDF6F023730A98004601DD /* DefinedColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinedColors.swift; sourceTree = "<group>"; };
 		ADCDE0EC3DAB1D360CFE21F8 /* Pods-EnjoyTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-EnjoyTaskTests/Pods-EnjoyTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BB7847EB3E09F980D12214A8 /* Pods-EnjoyTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyTaskTests.release.xcconfig"; path = "Target Support Files/Pods-EnjoyTaskTests/Pods-EnjoyTaskTests.release.xcconfig"; sourceTree = "<group>"; };
 		C284C4F7141A1ADEEF38B1A0 /* Pods_EnjoyTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnjoyTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -354,6 +356,7 @@
 			children = (
 				92EDE211232FBFF100B3D94E /* RootRouter.swift */,
 				9210A0A0233F9CC20086556C /* AccessibilityIdentifiers.swift */,
+				92FDF6F023730A98004601DD /* DefinedColors.swift */,
 			);
 			path = settings;
 			sourceTree = "<group>";
@@ -697,6 +700,7 @@
 				928208E1235DEE3000C93114 /* EditTaskInterfaces.swift in Sources */,
 				8E59FA932341ED2100299CA3 /* TaskListWireframe.swift in Sources */,
 				9252E607235F00E200797C7A /* Task.swift in Sources */,
+				92FDF6F123730A98004601DD /* DefinedColors.swift in Sources */,
 				92EDE209232FBEF700B3D94E /* LoginInterfaces.swift in Sources */,
 				92EDE1F4232F60C900B3D94E /* RegisterWireframe.swift in Sources */,
 				9210A0A1233F9CC20086556C /* AccessibilityIdentifiers.swift in Sources */,
